@@ -424,10 +424,57 @@ template {
   font-weight: normal;
   font-style: normal;
 }
+header {
+  background: #FFFFFF;
+  padding: 10px 15px;
+}
+header .container {
+  max-width: 1140px;
+  margin: auto;
+}
+header .container .list li {
+  margin: 0 23.5px 0;
+}
+header .container .list li a {
+  text-decoration: none;
+  color: #001133;
+  font-size: 18px;
+  font-family: "intersemi_bold";
+  line-height: 22px;
+}
+header .container .header_link_right a {
+  text-decoration: none;
+  color: #001133;
+  font-size: 18px;
+  font-family: "intersemi_bold";
+  line-height: 22px;
+}
+header .container .header_link_right a:last-of-type {
+  margin-left: 20px;
+  padding: 8px 24px;
+  background-color: #01F4AB;
+  border-radius: 30px;
+}
+header .container .header_link_right a:last-of-type:hover {
+  color: #FFFFFF;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-beetween {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
