@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "arialregular";
+  src: url("../fonts/arial/ofont.ru_arial-webfont.eot");
+  src: url("../fonts/arial/ofont.ru_arial-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/arial/ofont.ru_arial-webfont.woff2") format("woff2"), url("../fonts/arial/ofont.ru_arial-webfont.woff") format("woff"), url("../fonts/arial/ofont.ru_arial-webfont.ttf") format("truetype"), url("../fonts/arial/ofont.ru_arial-webfont.svg#arialregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "arialitalic";
+  src: url("../fonts/arial/ofont.ru_arial_2-webfont.eot");
+  src: url("../fonts/arial/ofont.ru_arial_2-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/arial/ofont.ru_arial_2-webfont.woff2") format("woff2"), url("../fonts/arial/ofont.ru_arial_2-webfont.woff") format("woff"), url("../fonts/arial/ofont.ru_arial_2-webfont.ttf") format("truetype"), url("../fonts/arial/ofont.ru_arial_2-webfont.svg#arialitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "arialbold";
+  src: url("../fonts/arial/ofont.ru_arial_1-webfont.eot");
+  src: url("../fonts/arial/ofont.ru_arial_1-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/arial/ofont.ru_arial_1-webfont.woff2") format("woff2"), url("../fonts/arial/ofont.ru_arial_1-webfont.woff") format("woff"), url("../fonts/arial/ofont.ru_arial_1-webfont.ttf") format("truetype"), url("../fonts/arial/ofont.ru_arial_1-webfont.svg#arialbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "interregular";
+  src: url("../fonts/inter/inter-regular-webfont.eot");
+  src: url("../fonts/inter/inter-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/inter/inter-regular-webfont.woff2") format("woff2"), url("../fonts/inter/inter-regular-webfont.woff") format("woff"), url("../fonts/inter/inter-regular-webfont.ttf") format("truetype"), url("../fonts/inter/inter-regular-webfont.svg#interregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "intermedium";
+  src: url("../fonts/inter/inter-medium-webfont.eot");
+  src: url("../fonts/inter/inter-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/inter/inter-medium-webfont.woff2") format("woff2"), url("../fonts/inter/inter-medium-webfont.woff") format("woff"), url("../fonts/inter/inter-medium-webfont.ttf") format("truetype"), url("../fonts/inter/inter-medium-webfont.svg#intermedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "intersemi_bold";
+  src: url("../fonts/inter/inter-semibold-webfont.eot");
+  src: url("../fonts/inter/inter-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/inter/inter-semibold-webfont.woff2") format("woff2"), url("../fonts/inter/inter-semibold-webfont.woff") format("woff"), url("../fonts/inter/inter-semibold-webfont.ttf") format("truetype"), url("../fonts/inter/inter-semibold-webfont.svg#intersemi_bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "interbold";
+  src: url("../fonts/inter/inter-bold-webfont.eot");
+  src: url("../fonts/inter/inter-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/inter/inter-bold-webfont.woff2") format("woff2"), url("../fonts/inter/inter-bold-webfont.woff") format("woff"), url("../fonts/inter/inter-bold-webfont.ttf") format("truetype"), url("../fonts/inter/inter-bold-webfont.svg#interbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotoregular";
+  src: url("../fonts/roboto/ofont.ru_roboto-webfont.eot");
+  src: url("../fonts/roboto/ofont.ru_roboto-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/ofont.ru_roboto-webfont.woff2") format("woff2"), url("../fonts/roboto/ofont.ru_roboto-webfont.woff") format("woff"), url("../fonts/roboto/ofont.ru_roboto-webfont.ttf") format("truetype"), url("../fonts/roboto/ofont.ru_roboto-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ia_writer_duo_vregular";
+  src: url("../fonts/ia_writer_duo_v/iawriterduov-webfont.eot");
+  src: url("../fonts/ia_writer_duo_v/iawriterduov-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ia_writer_duo_v/iawriterduov-webfont.woff2") format("woff2"), url("../fonts/ia_writer_duo_v/iawriterduov-webfont.woff") format("woff"), url("../fonts/ia_writer_duo_v/iawriterduov-webfont.ttf") format("truetype"), url("../fonts/ia_writer_duo_v/iawriterduov-webfont.svg#ia_writer_duo_vregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=fonts.css.map */
