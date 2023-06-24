@@ -424,6 +424,18 @@ template {
   font-weight: normal;
   font-style: normal;
 }
+.d-flex {
+  display: flex;
+}
+
+.justify-beetween {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
 header {
   background: #FFFFFF;
   padding: 10px 15px;
@@ -460,21 +472,7 @@ header .container .header_link_right a:last-of-type:hover {
 }
 
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
-}
-
-.d-flex {
-  display: flex;
-}
-
-.justify-beetween {
-  justify-content: space-between;
-}
-
-.align-center {
-  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
