@@ -436,6 +436,14 @@ template {
   align-items: center;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
 header {
   background: #FFFFFF;
   padding: 10px 15px;
@@ -637,6 +645,57 @@ footer .container .ft_right img {
   font-family: "ia_writer_duo_vregular";
   line-height: 120%;
   padding: 0 22px;
+}
+
+.about_verification {
+  background-color: #FFFFFF;
+}
+.about_verification .container {
+  max-width: 1376px;
+  margin: auto;
+}
+.about_verification .container .about_wrapper {
+  border-radius: 48px;
+  background: #001133;
+  padding: 110px 100px 100px;
+}
+.about_verification .container .about_wrapper h2 {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 48px;
+  font-family: "intersemi_bold";
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 57px;
+}
+.about_verification .container .about_wrapper .steps_card {
+  padding: 0 42px 30px 10px;
+}
+.about_verification .container .about_wrapper .steps_card svg {
+  margin-right: 24px;
+}
+.about_verification .container .about_wrapper .steps_card h3 {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: "interbold";
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.about_verification .container .about_wrapper .steps_card p {
+  color: #E7E7E7;
+  font-size: 16px;
+  font-family: "ia_writer_duo_vregular";
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+.steps_cards {
+  justify-content: space-between;
+}
+
+.steps_cards .steps_card .padding {
+  padding: 0 27px 30px 10px;
 }
 
 * {

@@ -1,0 +1,60 @@
+.about_verification {
+  background-color: $white;
+
+  .container {
+    max-width: 1376px;
+    margin: auto;
+
+    .about_wrapper {
+      border-radius: 48px;
+      background: $dark;
+      padding: 110px 100px 100px;
+
+      h2 {
+        color: $white;
+        text-align: center;
+        font-size: 48px;
+        font-family: $interSemiBold;
+        font-weight: 600;
+        line-height: 120%;
+        margin-bottom: 57px;
+      }
+
+      .steps_card {
+        padding: 0 42px 30px 10px;
+
+
+        svg {
+          margin-right: 24px;
+        }
+
+        h3 {
+          color: $white;
+          font-size: 20px;
+          font-family: $interBold;
+          font-weight: 700;
+          line-height: 30px;
+          margin-bottom: 10px;
+        }
+
+        p {
+          color: $lightGrey;
+          font-size: 16px;
+          font-family: $iawriterduov;
+          line-height: 120%;
+          margin-bottom: 30px;
+        }
+      }
+
+    }
+
+  }
+}
+
+.steps_cards {
+  justify-content: space-between;
+}
+
+.steps_cards .steps_card .padding {
+  padding: 0 27px 30px 10px;
+}
