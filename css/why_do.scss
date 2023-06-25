@@ -1,0 +1,53 @@
+.why_do {
+  background-color: $white;
+  padding: 92px 15px 99px;
+
+  .container {
+    max-width: 1256px;
+    margin: auto;
+
+    h2 {
+      color: $dark;
+      text-align: center;
+      font-size: 48px;
+      font-family: $interSemiBold;
+      font-weight: 600;
+      line-height: 120%;
+      margin-bottom: 35px;
+    }
+
+    .container_article_group {
+      justify-content: center;
+      gap: 17px;
+
+      article {
+        border-radius: 24px;
+        border: 1px solid $white;
+        box-shadow: 0px 4px 8px 0px rgba(0, 17, 51, 0.05);
+        text-align: center;
+        padding: 20px 30px 41px;
+
+        span {
+          margin-bottom: 16px;
+        }
+
+        h5 {
+          color: $dark;
+          font-size: 24px;
+          font-family: $interSemiBold;
+          font-weight: 600;
+          line-height: 120%;
+          margin-bottom: 12px;
+        }
+
+        p {
+          color: $greyBody;
+          font-size: 16px;
+          font-family: $iawriterduov;
+          line-height: 120%;
+          padding: 0 22px;
+        }
+      }
+    }
+  }
+}
