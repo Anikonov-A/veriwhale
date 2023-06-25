@@ -2,6 +2,7 @@
 @import "normalize";
 @import "fonts";
 @import "vars";
+@import "mixin";
 @import "classes";
 @import "header";
 @import "footer";
@@ -12,6 +13,8 @@
 @import "review_wrapper";
 @import "faq";
 @import "get_keys";
+
+
 
 
 * {

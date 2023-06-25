@@ -2,10 +2,18 @@ header {
   background: $white;
   padding: 10px 15px;
   margin-bottom: 83px;
+  @include max-screen(768px){
+    padding: 10px 3px;
+  }
 
   .container {
     max-width: 1140px;
     margin: auto;
+    .header_logo{
+      @include max-screen(768px){
+        display: none;
+      }
+    }
 
     .list {
       li {
@@ -16,10 +24,22 @@ header {
 
           color: $dark;
           font-size: 18px;
-          font-family:$inter;
+          font-family: $inter;
           font-weight: 600;
           line-height: 22px;
         }
+
+        @include max-screen(1024px) {
+          margin: 0 12px 0;
+
+        }
+        @include max-screen(834px) {
+          margin: 0 7px 0;
+        }
+        @include max-screen(768px){
+          margin: 0 4px 0;
+        }
+
       }
     }
 
@@ -28,20 +48,34 @@ header {
         text-decoration: none;
         color: $dark;
         font-size: 18px;
-        font-family:$inter;
+        font-family: $inter;
         font-weight: 600;
         line-height: 22px;
 
         &:last-of-type {
           margin-left: 20px;
           padding: 8px 24px;
-          background-color:$green ;
+          background-color: $green;
           border-radius: 30px;
         }
-        &:last-of-type:hover{
+
+        &:last-of-type:hover {
           color: $white;
+        }
+
+        @include max-screen(1024px) {
+          &:last-of-type {
+            margin-left: 10px;
+          }
+        }
+        @include max-screen(834px) {
+          &:last-of-type {
+            margin-left: 6px;
+            padding: 8px 12px;
+          }
         }
       }
     }
   }
 }
+
