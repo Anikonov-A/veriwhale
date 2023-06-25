@@ -1,0 +1,96 @@
+.pricing {
+  padding: 120px 94px;
+  background-color: $white;
+
+  .container {
+    max-width: 1252px;
+    margin: auto;
+
+    h2 {
+      color: $dark;
+      text-align: center;
+      font-size: 48px;
+      font-family: $interSemiBold;
+      font-weight: 600;
+      line-height: 120%;
+      margin-bottom: 73px;
+    }
+
+    .price_cols {
+      margin-bottom: 73px;
+      gap: 50px;
+
+      article {
+        text-align: center;
+
+        h4 {
+          color: $dark;
+          text-align: center;
+          font-size: 20px;
+          font-family: $interSemiBold;
+          font-weight: 600;
+          line-height: 36px;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+          margin-bottom: 18px;
+        }
+
+        svg {
+          margin-bottom: 31px;
+        }
+
+        a {
+          color: $dark;
+          font-size: 18px;
+          font-family: $interSemiBold;
+          font-weight: 600;
+          line-height: 28px;
+          border-radius: 10px;
+          background: $green;
+          padding: 14px 32px;
+          margin-bottom: 44px;
+          text-decoration: none;
+
+          &:hover {
+            color: $white;
+          }
+        }
+
+        p {
+          color: $dark;
+          text-align: center;
+          font-size: 16px;
+          font-family: $iawriterduov;
+          font-weight: 700;
+          line-height: 20px;
+          letter-spacing: 0.4px;
+          margin-bottom: 18px;
+          &:nth-child(5){
+            color:$dark;
+            text-align: center;
+            font-size: 16px;
+            font-family:$iawriterduov;
+            line-height: 20px;
+            letter-spacing: 0.4px;
+            font-weight: 400;
+          }
+        }
+
+
+      }
+    }
+  }
+}
+.pricing_wrapper{
+  p{
+    color:$greyBody;
+    text-align: center;
+    font-size: 16px;
+    font-family:$iawriterduov;
+    line-height: 120%;
+    a{
+      text-decoration: none;
+      color: #1764FF;
+    }
+  }
+}

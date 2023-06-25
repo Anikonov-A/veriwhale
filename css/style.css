@@ -444,6 +444,14 @@ template {
   flex-direction: column;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 header {
   background: #FFFFFF;
   padding: 10px 15px;
@@ -696,6 +704,91 @@ footer .container .ft_right img {
 
 .steps_cards .steps_card .padding {
   padding: 0 27px 30px 10px;
+}
+
+.pricing {
+  padding: 120px 94px;
+  background-color: #FFFFFF;
+}
+.pricing .container {
+  max-width: 1252px;
+  margin: auto;
+}
+.pricing .container h2 {
+  color: #001133;
+  text-align: center;
+  font-size: 48px;
+  font-family: "intersemi_bold";
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 73px;
+}
+.pricing .container .price_cols {
+  margin-bottom: 73px;
+  gap: 50px;
+}
+.pricing .container .price_cols article {
+  text-align: center;
+}
+.pricing .container .price_cols article h4 {
+  color: #001133;
+  text-align: center;
+  font-size: 20px;
+  font-family: "intersemi_bold";
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.pricing .container .price_cols article svg {
+  margin-bottom: 31px;
+}
+.pricing .container .price_cols article a {
+  color: #001133;
+  font-size: 18px;
+  font-family: "intersemi_bold";
+  font-weight: 600;
+  line-height: 28px;
+  border-radius: 10px;
+  background: #01F4AB;
+  padding: 14px 32px;
+  margin-bottom: 44px;
+  text-decoration: none;
+}
+.pricing .container .price_cols article a:hover {
+  color: #FFFFFF;
+}
+.pricing .container .price_cols article p {
+  color: #001133;
+  text-align: center;
+  font-size: 16px;
+  font-family: "ia_writer_duo_vregular";
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  margin-bottom: 18px;
+}
+.pricing .container .price_cols article p:nth-child(5) {
+  color: #001133;
+  text-align: center;
+  font-size: 16px;
+  font-family: "ia_writer_duo_vregular";
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+}
+
+.pricing_wrapper p {
+  color: #333C4D;
+  text-align: center;
+  font-size: 16px;
+  font-family: "ia_writer_duo_vregular";
+  line-height: 120%;
+}
+.pricing_wrapper p a {
+  text-decoration: none;
+  color: #1764FF;
 }
 
 * {
