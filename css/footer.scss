@@ -8,7 +8,8 @@ footer {
 
     p {
       font-size: 14px;
-      font-family: $interRegular;
+      font-family:$inter;
+      font-weight: 400;
       line-height: 18px;
       color: $lightGrey;
       opacity: 0.6;
@@ -29,7 +30,7 @@ footer {
 
           &:first-of-type {
             font-size: 18px;
-            font-family: $interSemiBold;
+            font-family:$inter;
             font-weight: 600;
             line-height: 22px;
             color: $white;

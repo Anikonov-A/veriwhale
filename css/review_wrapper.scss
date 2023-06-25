@@ -1,0 +1,39 @@
+.clients_review {
+  background: $softBlue;
+  padding: 60px 150px 100px;
+
+  .container {
+    max-width: 1140px;
+    margin: auto;
+  }
+
+  .review_wrapper {
+    h2 {
+      color: $dark;
+      text-align: center;
+      font-size: 48px;
+      font-family:$inter;
+      font-weight: 600;
+      line-height: 60px;
+      margin-bottom: 70px;
+    }
+
+    .review_cals {
+      gap: 45px;
+      p {
+        color: $greyBody;
+        font-size: 16px;
+        font-family: $iawriterduov;
+        line-height: 120%;
+        margin-bottom: 20px;
+        &:nth-child(2){
+          color:$dark;
+          font-size: 16px;
+          font-family:'Inter', sans-serif;
+          font-weight: 600;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}

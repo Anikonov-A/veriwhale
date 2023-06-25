@@ -16,7 +16,8 @@ header {
 
           color: $dark;
           font-size: 18px;
-          font-family: $interSemiBold;
+          font-family:$inter;
+          font-weight: 600;
           line-height: 22px;
         }
       }
@@ -27,7 +28,8 @@ header {
         text-decoration: none;
         color: $dark;
         font-size: 18px;
-        font-family: $interSemiBold;
+        font-family:$inter;
+        font-weight: 600;
         line-height: 22px;
 
         &:last-of-type {

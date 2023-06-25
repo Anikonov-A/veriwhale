@@ -1,0 +1,37 @@
+.faq{
+  background:$white;
+  padding: 90px 92px 80px;
+  .container{
+    max-width: 1256px ;
+    margin: auto;
+  }
+  .faq_wrapper{
+    h2{
+      color:$dark;
+      text-align: center;
+      font-size: 48px;
+      font-family:$inter;
+      font-weight: 600;
+      line-height: 120%;
+      margin-bottom: 54px;
+    }
+    .faq_article_group{
+      padding: 0 60px;
+      h3{
+        color:$dark;
+        font-size: 24px;
+        font-family:$inter;
+        font-weight: 600;
+        line-height: 120%;
+        margin-bottom: 16px;
+      }
+      p{
+        color:$greyBody;
+        font-size: 16px;
+        font-family:$iawriterduov;
+        line-height: 120%;
+        margin-bottom: 41px;
+      }
+    }
+  }
+}
