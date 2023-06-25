@@ -1,0 +1,61 @@
+footer {
+  padding: 78px 15px 34px;
+  background-color:$dark;
+
+  .container {
+    max-width: 1140px;
+    margin: auto;
+
+    p {
+      font-size: 14px;
+      font-family: $interRegular;
+      line-height: 18px;
+      color: $lightGrey;
+      opacity: 0.6;
+
+
+    }
+
+    .ft_left {
+      margin-bottom: 74px;
+
+      ul {
+        &:first-of-type {
+          margin-right: 120px;
+        }
+
+        li {
+          margin: 4px 0;
+
+          &:first-of-type {
+            font-size: 18px;
+            font-family: $interSemiBold;
+            font-weight: 600;
+            line-height: 22px;
+            color: $white;
+            margin-bottom: 28px;
+          }
+
+          a {
+            text-decoration: none;
+            font-size: 14px;
+            font-family: $iawriterduov;
+            font-weight: 450;
+            line-height: 28px;
+            color: $white;
+
+          }
+        }
+      }
+    }
+
+    .ft_right {
+      align-self: flex-end;
+      img{
+        position: relative;
+        left: 50px;
+        top: 25px;
+      }
+    }
+  }
+}

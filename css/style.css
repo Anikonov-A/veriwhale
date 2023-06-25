@@ -471,6 +471,55 @@ header .container .header_link_right a:last-of-type:hover {
   color: #FFFFFF;
 }
 
+footer {
+  padding: 78px 15px 34px;
+  background-color: #001133;
+}
+footer .container {
+  max-width: 1140px;
+  margin: auto;
+}
+footer .container p {
+  font-size: 14px;
+  font-family: "interregular";
+  line-height: 18px;
+  color: #E7E7E7;
+  opacity: 0.6;
+}
+footer .container .ft_left {
+  margin-bottom: 74px;
+}
+footer .container .ft_left ul:first-of-type {
+  margin-right: 120px;
+}
+footer .container .ft_left ul li {
+  margin: 4px 0;
+}
+footer .container .ft_left ul li:first-of-type {
+  font-size: 18px;
+  font-family: "intersemi_bold";
+  font-weight: 600;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-bottom: 28px;
+}
+footer .container .ft_left ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "ia_writer_duo_vregular";
+  font-weight: 450;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+footer .container .ft_right {
+  align-self: flex-end;
+}
+footer .container .ft_right img {
+  position: relative;
+  left: 50px;
+  top: 25px;
+}
+
 * {
   box-sizing: border-box;
 }
