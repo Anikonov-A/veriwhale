@@ -1,0 +1,37 @@
+.get_keys{
+  padding: 0 32px 55px;
+  .container{
+    max-width: 1376px;
+    margin: auto;
+    .get_keys_wrapper{
+      background-color:$blue;
+      border-radius: 48px;
+      padding:96px 242px 80px ;
+      text-align: center;
+      h2{
+        color:$white;
+        font-size: 48px;
+        font-family:$inter;
+        font-weight: 600;
+        line-height: 60px;
+        margin-bottom: 54px;
+      }
+      a{
+        color:$dark;
+        font-size: 16px;
+        font-family:$inter;
+        font-weight: 600;
+        line-height: 28px;
+        padding: 14px 32px;
+        border-radius: 10px;
+        background:$white;
+        box-shadow: 0 0 0 1px #E0E4EB inset;
+        text-decoration: none;
+        &:hover{
+          color:$white;
+          background-color:$blue;
+        }
+      }
+    }
+  }
+}

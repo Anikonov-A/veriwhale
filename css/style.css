@@ -912,6 +912,44 @@ footer .container .ft_right img {
   margin-bottom: 41px;
 }
 
+.get_keys {
+  padding: 0 32px 55px;
+}
+.get_keys .container {
+  max-width: 1376px;
+  margin: auto;
+}
+.get_keys .container .get_keys_wrapper {
+  background-color: #1764FF;
+  border-radius: 48px;
+  padding: 96px 242px 80px;
+  text-align: center;
+}
+.get_keys .container .get_keys_wrapper h2 {
+  color: #FFFFFF;
+  font-size: 48px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 60px;
+  margin-bottom: 54px;
+}
+.get_keys .container .get_keys_wrapper a {
+  color: #001133;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 28px;
+  padding: 14px 32px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  box-shadow: 0 0 0 1px #E0E4EB inset;
+  text-decoration: none;
+}
+.get_keys .container .get_keys_wrapper a:hover {
+  color: #FFFFFF;
+  background-color: #1764FF;
+}
+
 * {
   box-sizing: border-box;
 }
