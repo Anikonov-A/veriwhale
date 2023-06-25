@@ -2,31 +2,41 @@ header {
   background: $white;
   padding: 10px 15px;
   margin-bottom: 83px;
-  @include max-screen(768px){
+  @include max-screen(768px) {
     padding: 10px 3px;
   }
 
   .container {
     max-width: 1140px;
     margin: auto;
-    .header_logo{
-      @include max-screen(768px){
-        display: none;
+
+    .header_logo {
+      img {
+        @include max-screen(768px) {
+          max-width: 100%;
+        }
       }
     }
 
     .list {
+      @include max-screen(768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
       li {
         margin: 0 23.5px 0;
 
         a {
           text-decoration: none;
-
           color: $dark;
           font-size: 18px;
           font-family: $inter;
           font-weight: 600;
           line-height: 22px;
+          @include max-screen(768px) {
+            font-size: 14px;
+          }
         }
 
         @include max-screen(1024px) {
@@ -36,9 +46,7 @@ header {
         @include max-screen(834px) {
           margin: 0 7px 0;
         }
-        @include max-screen(768px){
-          margin: 0 4px 0;
-        }
+
 
       }
     }
@@ -72,6 +80,13 @@ header {
           &:last-of-type {
             margin-left: 6px;
             padding: 8px 12px;
+
+          }
+          @include max-screen(768px) {
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
           }
         }
       }
