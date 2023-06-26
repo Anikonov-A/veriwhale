@@ -540,6 +540,11 @@ header .container .header_link_right a {
   font-weight: 600;
   line-height: 22px;
 }
+@media screen and (max-width: 991px) {
+  header .container .header_link_right a {
+    font-size: 14px;
+  }
+}
 @media screen and (max-width: 767px) {
   header .container .header_link_right a {
     font-size: 14px;
@@ -559,6 +564,12 @@ header .container .header_link_right a:last-of-type:hover {
     margin-left: 10px;
   }
 }
+@media screen and (max-width: 991px) {
+  header .container .header_link_right a:last-of-type {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
 @media screen and (max-width: 834px) {
   header .container .header_link_right a:last-of-type {
     margin-left: 3px;
@@ -566,7 +577,7 @@ header .container .header_link_right a:last-of-type:hover {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 793px) {
   header {
     position: relative;
   }

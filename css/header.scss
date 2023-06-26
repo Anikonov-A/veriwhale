@@ -40,6 +40,9 @@ header {
         font-family: $inter;
         font-weight: 600;
         line-height: 22px;
+        @include max-screen(991px){
+          font-size: 14px;
+        }
         @include max-screen(767px) {
           font-size: 14px;
 
@@ -61,6 +64,13 @@ header {
             margin-left: 10px;
           }
         }
+        @include max-screen(991px){
+          &:last-of-type{
+            font-size: 16px;
+            line-height: 18px;
+          }
+        }
+
         @include max-screen(834px) {
           &:last-of-type {
             margin-left: 3px;
@@ -74,7 +84,7 @@ header {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 793px) {
   header {
     position: relative;
 
