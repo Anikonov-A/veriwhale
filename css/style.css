@@ -1401,6 +1401,45 @@ footer .container .ft_right img {
   line-height: 30px;
 }
 
+@media (max-width: 1024px) {
+  .clients_review {
+    padding: 60px 15px 60px;
+  }
+}
+@media (max-width: 991px) {
+  .clients_review .container .review_wrapper h2 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 35px;
+  }
+  .clients_review .container .review_wrapper .review_cals {
+    gap: 20px;
+  }
+  .clients_review .container .review_wrapper .review_cals article p {
+    line-height: 100%;
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .clients_review .container .review_wrapper h2 {
+    font-size: 32px;
+    line-height: 45px;
+  }
+}
+@media (max-width: 575px) {
+  .clients_review {
+    padding: 15px 15px 15px;
+  }
+  .clients_review .container .review_wrapper h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    line-height: 25px;
+  }
+  .clients_review .container .review_wrapper .review_cals {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .faq {
   background: #FFFFFF;
   padding: 90px 92px 80px;
