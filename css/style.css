@@ -1710,4 +1710,8 @@ footer .container .ft_right img {
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /*# sourceMappingURL=style.css.map */
