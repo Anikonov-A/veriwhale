@@ -510,24 +510,16 @@ header {
 }
 @media screen and (max-width: 768px) {
   header {
-    padding: 10px 3px;
+    padding: 10px 15px;
+    margin-bottom: 0px;
   }
 }
 header .container {
   max-width: 1140px;
   margin: auto;
 }
-@media screen and (max-width: 768px) {
-  header .container .header_logo img {
-    max-width: 100%;
-  }
-}
-@media screen and (max-width: 768px) {
-  header .container .list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+header .container .header_mobile_btn {
+  display: none;
 }
 header .container .list li {
   margin: 0 23.5px 0;
@@ -540,21 +532,6 @@ header .container .list li a {
   font-weight: 600;
   line-height: 22px;
 }
-@media screen and (max-width: 768px) {
-  header .container .list li a {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  header .container .list li {
-    margin: 0 12px 0;
-  }
-}
-@media screen and (max-width: 834px) {
-  header .container .list li {
-    margin: 0 7px 0;
-  }
-}
 header .container .header_link_right a {
   text-decoration: none;
   color: #001133;
@@ -562,6 +539,11 @@ header .container .header_link_right a {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   line-height: 22px;
+}
+@media screen and (max-width: 767px) {
+  header .container .header_link_right a {
+    font-size: 14px;
+  }
 }
 header .container .header_link_right a:last-of-type {
   margin-left: 20px;
@@ -579,19 +561,61 @@ header .container .header_link_right a:last-of-type:hover {
 }
 @media screen and (max-width: 834px) {
   header .container .header_link_right a:last-of-type {
-    margin-left: 6px;
-    padding: 8px 12px;
-  }
-}
-@media screen and (max-width: 834px) and (max-width: 768px) {
-  header .container .header_link_right a {
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-left: 3px;
+    padding: 4px 6px;
   }
 }
 
+@media (max-width: 767px) {
+  header {
+    position: relative;
+  }
+  header .container .header_logo img {
+    max-width: 70%;
+  }
+  header .container .header_mobile_btn {
+    display: block;
+    background-image: url("../img/menu-open.svg");
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    margin-right: 5px;
+  }
+  header .container .header_mobile_btn_active {
+    background-image: url("../img/menu-close.svg");
+  }
+  header .container nav {
+    /*order: 1;*/
+    /*margin: 0;*/
+  }
+  header .container .list {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 20px 0;
+  }
+  header .container .list li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  header .container .list a {
+    display: block;
+    background-color: #01F4AB;
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+  header .container .list a:hover {
+    color: #FFFFFF;
+  }
+  header .container .header__menu_open {
+    display: block;
+  }
+}
 footer {
   padding: 78px 15px 34px;
   background-color: #001133;
@@ -750,7 +774,8 @@ footer .container .ft_right img {
     padding: 0 15px;
     text-align: center;
   }
-  .heropage_component_info {
+  .main_banner .container .heropage_component_info {
+    padding: 35px 0;
     width: 100%;
   }
   .image_main {
@@ -870,7 +895,7 @@ footer .container .ft_right img {
   }
   .why_do .container .container_article_group article p {
     font-size: 10px;
-    line-height: 80%;
+    line-height: 100%;
     padding: 5px 5px;
   }
 }
@@ -898,7 +923,7 @@ footer .container .ft_right img {
   }
   .why_do .container .container_article_group article p {
     font-size: 10px;
-    line-height: 80%;
+    line-height: 100%;
     padding: 5px 5px;
   }
 }
@@ -985,7 +1010,7 @@ footer .container .ft_right img {
     line-height: 17px;
   }
   .about_verification .container .about_wrapper .steps_card p {
-    line-height: 80%;
+    line-height: 100%;
     font-size: 14px;
   }
 }
@@ -1009,7 +1034,7 @@ footer .container .ft_right img {
     font-size: 16px;
   }
   .about_verification .container .about_wrapper .steps_card p {
-    line-height: 80%;
+    line-height: 100%;
     font-size: 14px;
   }
 }
@@ -1034,7 +1059,7 @@ footer .container .ft_right img {
     font-size: 16px;
   }
   .about_verification .container .about_wrapper .steps_card p {
-    line-height: 80%;
+    line-height: 100%;
     font-size: 14px;
   }
 }
@@ -1059,7 +1084,7 @@ footer .container .ft_right img {
     font-size: 14px;
   }
   .about_verification .container .about_wrapper .steps_card p {
-    line-height: 80%;
+    line-height: 100%;
     font-size: 12px;
   }
 }

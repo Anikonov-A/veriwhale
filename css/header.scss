@@ -3,27 +3,20 @@ header {
   padding: 10px 15px;
   margin-bottom: 83px;
   @include max-screen(768px) {
-    padding: 10px 3px;
+    padding: 10px 15px;
+    margin-bottom: 0px;
   }
 
   .container {
     max-width: 1140px;
     margin: auto;
 
-    .header_logo {
-      img {
-        @include max-screen(768px) {
-          max-width: 100%;
-        }
-      }
+    .header_mobile_btn {
+      display: none;
     }
 
     .list {
-      @include max-screen(768px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+
       li {
         margin: 0 23.5px 0;
 
@@ -34,19 +27,7 @@ header {
           font-family: $inter;
           font-weight: 600;
           line-height: 22px;
-          @include max-screen(768px) {
-            font-size: 14px;
-          }
         }
-
-        @include max-screen(1024px) {
-          margin: 0 12px 0;
-
-        }
-        @include max-screen(834px) {
-          margin: 0 7px 0;
-        }
-
 
       }
     }
@@ -59,6 +40,10 @@ header {
         font-family: $inter;
         font-weight: 600;
         line-height: 22px;
+        @include max-screen(767px) {
+          font-size: 14px;
+
+        }
 
         &:last-of-type {
           margin-left: 20px;
@@ -78,19 +63,83 @@ header {
         }
         @include max-screen(834px) {
           &:last-of-type {
-            margin-left: 6px;
-            padding: 8px 12px;
+            margin-left: 3px;
+            padding: 4px 6px;
 
           }
-          @include max-screen(768px) {
-            font-size: 14px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-          }
         }
+
       }
     }
   }
 }
 
+@media (max-width: 767px) {
+  header {
+    position: relative;
+
+    .container {
+      .header_logo {
+        img {
+          max-width: 70%;
+        }
+      }
+
+      .header_mobile_btn {
+        display: block;
+        background-image: url("../img/menu-open.svg");
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+        border: none;
+        margin-right: 5px;
+
+        &_active {
+          background-image: url("../img/menu-close.svg");
+        }
+      }
+
+      nav {
+        /*order: 1;*/
+        /*margin: 0;*/
+      }
+
+      .list {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        background-color: $white;
+        padding: 20px 0;
+
+
+        li {
+          &:not(:last-child) {
+            margin-bottom: 15px;
+          }
+        }
+
+        a {
+          display: block;
+          background-color: $green;
+          padding: 10px 15px;
+          border-radius: 10px;
+
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+
+      .header__menu {
+        &_open {
+          display: block;
+        }
+      }
+
+    }
+  }
+}
