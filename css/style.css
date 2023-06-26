@@ -1586,6 +1586,50 @@ footer .container .ft_right img {
   background-color: #1764FF;
 }
 
+@media (max-width: 1024px) {
+  .get_keys .container .get_keys_wrapper {
+    padding: 96px 70px 80px;
+  }
+}
+@media (max-width: 991px) {
+  .get_keys .container .get_keys_wrapper h2 {
+    font-size: 42px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .get_keys .container .get_keys_wrapper {
+    padding: 40px 35px 40px;
+  }
+  .get_keys .container .get_keys_wrapper h2 {
+    font-size: 36px;
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 575px) {
+  .get_keys .container .get_keys_wrapper {
+    padding: 20px 15px 20px;
+  }
+  .get_keys .container .get_keys_wrapper h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 428px) {
+  .get_keys .container .get_keys_wrapper {
+    padding: 10px 15px 10px;
+  }
+  .get_keys .container .get_keys_wrapper h2 {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 20px;
+  }
+  .get_keys .container .get_keys_wrapper a {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+}
 * {
   box-sizing: border-box;
 }

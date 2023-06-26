@@ -1,37 +1,144 @@
-.get_keys{
+.get_keys {
   padding: 0 32px 55px;
-  .container{
+
+  .container {
     max-width: 1376px;
     margin: auto;
-    .get_keys_wrapper{
-      background-color:$blue;
+
+    .get_keys_wrapper {
+      background-color: $blue;
       border-radius: 48px;
-      padding:96px 242px 80px ;
+      padding: 96px 242px 80px;
       text-align: center;
-      h2{
-        color:$white;
+
+      h2 {
+        color: $white;
         font-size: 48px;
-        font-family:$inter;
+        font-family: $inter;
         font-weight: 600;
         line-height: 60px;
         margin-bottom: 54px;
       }
-      a{
-        color:$dark;
+
+      a {
+        color: $dark;
         font-size: 16px;
-        font-family:$inter;
+        font-family: $inter;
         font-weight: 600;
         line-height: 28px;
         padding: 14px 32px;
         border-radius: 10px;
-        background:$white;
+        background: $white;
         box-shadow: 0 0 0 1px #E0E4EB inset;
         text-decoration: none;
-        &:hover{
-          color:$white;
-          background-color:$blue;
+
+        &:hover {
+          color: $white;
+          background-color: $blue;
         }
       }
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .get_keys {
+    .container {
+      .get_keys_wrapper {
+        padding: 96px 70px 80px;
+
+        h2 {
+
+        }
+
+        a {
+        }
+      }
+
+    }
+  }
+
+}
+
+@media (max-width: 991px) {
+  .get_keys {
+    .container {
+      .get_keys_wrapper {
+        h2 {
+          font-size: 42px;
+          margin-bottom: 40px;
+        }
+
+        a {
+        }
+      }
+
+
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+  .get_keys {
+    .container {
+      .get_keys_wrapper {
+        padding: 40px 35px 40px;
+
+        h2 {
+          font-size: 36px;
+          margin-bottom: 32px;
+        }
+
+      }
+
+      a {
+      }
+    }
+
+  }
+}
+
+@media (max-width: 575px) {
+  .get_keys {
+    .container {
+      .get_keys_wrapper {
+        padding: 20px 15px 20px;
+
+        h2 {
+          font-size: 20px;
+          margin-bottom: 20px;
+          line-height: 40px;
+        }
+
+      }
+
+      a {
+      }
+    }
+
+  }
+}
+@media (max-width: 428px) {
+  .get_keys {
+    .container {
+      .get_keys_wrapper {
+        padding: 10px 15px 10px;
+
+        h2 {
+          font-size: 14px;
+          margin-bottom: 15px;
+          line-height: 20px;
+        }
+        a {
+          padding: 10px 24px;
+          font-size: 14px;
+        }
+      }
+
+
+    }
+
+  }
+}
+
