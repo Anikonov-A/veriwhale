@@ -863,6 +863,7 @@ footer .container .ft_right img {
 }
 .about_verification .container {
   max-width: 1376px;
+  min-width: 360px;
   margin: auto;
 }
 .about_verification .container .about_wrapper {
@@ -878,9 +879,6 @@ footer .container .ft_right img {
   font-weight: 600;
   line-height: 120%;
   margin-bottom: 57px;
-}
-.about_verification .container .about_wrapper .steps_card {
-  padding: 0 42px 30px 10px;
 }
 .about_verification .container .about_wrapper .steps_card svg {
   margin-right: 24px;
@@ -905,10 +903,122 @@ footer .container .ft_right img {
   justify-content: space-between;
 }
 
-.steps_cards .steps_card .padding {
+/*.steps_cards .steps_card .padding {
   padding: 0 27px 30px 10px;
+}*/
+@media (max-width: 1220px) {
+  .steps_card {
+    width: 50%;
+  }
+  .steps_card svg {
+    max-width: 7%;
+  }
+  .steps_card h3 {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .steps_card p {
+    font-size: 14px;
+    line-height: 100%;
+  }
 }
-
+@media (max-width: 1024px) {
+  .about_verification .container .about_wrapper {
+    padding: 60px 60px 60px;
+  }
+  .about_verification .container .about_wrapper h2 {
+    font-size: 40px;
+  }
+  .about_verification .container .about_wrapper .steps_card {
+    width: 33.333%;
+    gap: 10px;
+  }
+  .about_verification .container .about_wrapper .steps_card svg {
+    margin-right: 16px;
+  }
+  .about_verification .container .about_wrapper .steps_card h3 {
+    font-size: 18px;
+    line-height: 17px;
+  }
+  .about_verification .container .about_wrapper .steps_card p {
+    line-height: 80%;
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .about_verification .container .about_wrapper {
+    padding: 60px 60px 60px;
+  }
+  .about_verification .container .about_wrapper h2 {
+    font-size: 28px;
+  }
+  .about_verification .container .about_wrapper .steps_card {
+    width: 33.333%;
+    gap: 7px;
+  }
+  .about_verification .container .about_wrapper .steps_card svg {
+    max-width: 70%;
+    margin-right: 10px;
+  }
+  .about_verification .container .about_wrapper .steps_card h3 {
+    line-height: 17px;
+    font-size: 16px;
+  }
+  .about_verification .container .about_wrapper .steps_card p {
+    line-height: 80%;
+    font-size: 14px;
+  }
+}
+@media (max-width: 575px) {
+  .about_verification .container .about_wrapper {
+    padding: 20px 20px 20px;
+  }
+  .about_verification .container .about_wrapper h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+  .about_verification .container .about_wrapper .steps_card {
+    width: 33.333%;
+    gap: 7px;
+  }
+  .about_verification .container .about_wrapper .steps_card svg {
+    max-width: 70%;
+    margin-right: 10px;
+  }
+  .about_verification .container .about_wrapper .steps_card h3 {
+    line-height: 17px;
+    font-size: 16px;
+  }
+  .about_verification .container .about_wrapper .steps_card p {
+    line-height: 80%;
+    font-size: 14px;
+  }
+}
+@media (max-width: 428px) {
+  .about_verification .container .about_wrapper {
+    padding: 20px 20px 20px;
+  }
+  .about_verification .container .about_wrapper h2 {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  .about_verification .container .about_wrapper .steps_card {
+    width: 100%;
+    gap: 7px;
+  }
+  .about_verification .container .about_wrapper .steps_card svg {
+    max-width: 70%;
+    margin-right: 10px;
+  }
+  .about_verification .container .about_wrapper .steps_card h3 {
+    line-height: 17px;
+    font-size: 14px;
+  }
+  .about_verification .container .about_wrapper .steps_card p {
+    line-height: 80%;
+    font-size: 12px;
+  }
+}
 .pricing {
   padding: 120px 94px;
   background-color: #FFFFFF;
