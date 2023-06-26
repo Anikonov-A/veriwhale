@@ -34,10 +34,12 @@
           text-transform: uppercase;
           margin-bottom: 18px;
         }
+        /*
 
         svg {
           margin-bottom: 31px;
         }
+        */
 
         a {
           color: $dark;
@@ -91,6 +93,27 @@
     a{
       text-decoration: none;
       color: #1764FF;
+    }
+  }
+}
+.price{
+  text-align: start;
+  gap: 6px;
+  margin-bottom: 16px;
+  span{
+    color:$dark;
+
+    font-size: 32px;
+    font-family:$inter;
+    font-weight: 700;
+    line-height: 57.6px;
+    letter-spacing: 0.8px;
+    &:nth-child(2){
+      color:$dark;
+      font-size: 14px;
+      font-family:$iawriterduov;
+      line-height: 15px;
+      letter-spacing: 0.35px;
     }
   }
 }
