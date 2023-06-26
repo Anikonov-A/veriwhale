@@ -40,7 +40,7 @@ header {
         font-family: $inter;
         font-weight: 600;
         line-height: 22px;
-        @include max-screen(991px){
+        @include max-screen(991px) {
           font-size: 14px;
         }
         @include max-screen(767px) {
@@ -64,8 +64,8 @@ header {
             margin-left: 10px;
           }
         }
-        @include max-screen(991px){
-          &:last-of-type{
+        @include max-screen(991px) {
+          &:last-of-type {
             font-size: 16px;
             line-height: 18px;
           }
@@ -89,6 +89,16 @@ header {
     position: relative;
 
     .container {
+      .header_link_right {
+        display: inline-flex;
+        width: 174px;
+      }
+
+      nav {
+        order: 1;
+        margin: 0;
+      }
+
       .header_logo {
         img {
           max-width: 70%;
@@ -111,10 +121,6 @@ header {
         }
       }
 
-      nav {
-        /*order: 1;*/
-        /*margin: 0;*/
-      }
 
       .list {
         display: none;
@@ -150,6 +156,21 @@ header {
         }
       }
 
+    }
+  }
+}
+
+@media(max-width: 414px) {
+  header {
+    .container {
+      .header_link_right {
+        a {
+          &:last-of-type {
+            font-size: 13px;
+            line-height: 15px;
+          }
+        }
+      }
     }
   }
 }

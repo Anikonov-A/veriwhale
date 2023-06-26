@@ -581,6 +581,14 @@ header .container .header_link_right a:last-of-type:hover {
   header {
     position: relative;
   }
+  header .container .header_link_right {
+    display: inline-flex;
+    width: 174px;
+  }
+  header .container nav {
+    order: 1;
+    margin: 0;
+  }
   header .container .header_logo img {
     max-width: 70%;
   }
@@ -597,10 +605,6 @@ header .container .header_link_right a:last-of-type:hover {
   }
   header .container .header_mobile_btn_active {
     background-image: url("../img/menu-close.svg");
-  }
-  header .container nav {
-    /*order: 1;*/
-    /*margin: 0;*/
   }
   header .container .list {
     display: none;
@@ -625,6 +629,12 @@ header .container .header_link_right a:last-of-type:hover {
   }
   header .container .header__menu_open {
     display: block;
+  }
+}
+@media (max-width: 414px) {
+  header .container .header_link_right a:last-of-type {
+    font-size: 13px;
+    line-height: 15px;
   }
 }
 footer {
