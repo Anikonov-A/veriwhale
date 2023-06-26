@@ -637,6 +637,16 @@ footer .container .ft_right img {
   left: 50px;
   top: 25px;
 }
+@media screen and (max-width: 1240px) {
+  footer .container .ft_right img {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .container .ft_right img {
+    max-width: 70%;
+  }
+}
 
 .main_banner {
   background: linear-gradient(180deg, #FFF 0%, #F4F8FF 100%);
@@ -709,12 +719,19 @@ footer .container .ft_right img {
   line-height: 20px;
 }
 
+@media screen and (max-width: 1300px) {
+  .heropage_component_container span svg {
+    max-width: 70%;
+  }
+}
+
 .why_do {
   background-color: #FFFFFF;
   padding: 92px 15px 99px;
 }
 .why_do .container {
   max-width: 1256px;
+  min-width: 360px;
   margin: auto;
 }
 .why_do .container h2 {
@@ -756,6 +773,91 @@ footer .container .ft_right img {
   padding: 0 22px;
 }
 
+@media (max-width: 991px) {
+  .why_do .container h2 {
+    font-size: 34px;
+  }
+  .why_do .container .container_article_group article {
+    padding: 10px 25px 40px;
+  }
+  .why_do .container .container_article_group article span img {
+    max-width: 100%;
+  }
+  .why_do .container .container_article_group article h5 {
+    font-size: 20px;
+  }
+  .why_do .container .container_article_group article p {
+    font-size: 16px;
+    line-height: 110%;
+    padding: 0 3px;
+  }
+}
+@media (max-width: 991px) and (max-width: 767px) {
+  .why_do .container h2 {
+    font-size: 30px;
+  }
+  .why_do .container .container_article_group article {
+    padding: 0 15px 20px;
+  }
+  .why_do .container .container_article_group article span img {
+    max-width: 70%;
+  }
+  .why_do .container .container_article_group article h5 {
+    font-size: 16px;
+  }
+  .why_do .container .container_article_group article p {
+    font-size: 12px;
+    line-height: 100%;
+    padding: 5px 3px;
+  }
+}
+@media (max-width: 991px) and (max-width: 575px) {
+  .why_do .container h2 {
+    font-size: 24px;
+  }
+  .why_do .container .container_article_group article {
+    padding: 10px 10px 10px;
+  }
+  .why_do .container .container_article_group article span img {
+    display: none;
+  }
+  .why_do .container .container_article_group article h5 {
+    font-size: 14px;
+  }
+  .why_do .container .container_article_group article p {
+    font-size: 10px;
+    line-height: 80%;
+    padding: 5px 5px;
+  }
+}
+@media (max-width: 991px) and (max-width: 428px) {
+  .why_do {
+    padding: 40px 0 40px;
+  }
+  .why_do .container {
+    min-width: 360px;
+  }
+  .why_do .container h2 {
+    font-size: 14px;
+  }
+  .why_do .container .container_article_group {
+    flex-direction: column;
+  }
+  .why_do .container .container_article_group article {
+    padding: 5px 5px 5px;
+  }
+  .why_do .container .container_article_group article span img {
+    display: none;
+  }
+  .why_do .container .container_article_group article h5 {
+    font-size: 12px;
+  }
+  .why_do .container .container_article_group article p {
+    font-size: 10px;
+    line-height: 80%;
+    padding: 5px 5px;
+  }
+}
 .about_verification {
   background-color: #FFFFFF;
 }

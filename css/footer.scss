@@ -56,6 +56,12 @@ footer {
         position: relative;
         left: 50px;
         top: 25px;
+        @include max-screen(1240px){
+          max-width: 100%;
+        }
+        @include max-screen(768px){
+          max-width: 70%;
+        }
       }
     }
   }

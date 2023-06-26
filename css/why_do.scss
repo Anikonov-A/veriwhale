@@ -4,13 +4,14 @@
 
   .container {
     max-width: 1256px;
+    min-width: 360px;
     margin: auto;
 
     h2 {
       color: $dark;
       text-align: center;
       font-size: 48px;
-      font-family:$inter;
+      font-family: $inter;
       font-weight: 600;
       line-height: 120%;
       margin-bottom: 35px;
@@ -34,7 +35,7 @@
         h5 {
           color: $dark;
           font-size: 24px;
-          font-family:$inter;
+          font-family: $inter;
           font-weight: 600;
           line-height: 120%;
           margin-bottom: 12px;
@@ -46,6 +47,141 @@
           font-family: $iawriterduov;
           line-height: 120%;
           padding: 0 22px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .why_do {
+    .container {
+      h2 {
+        font-size: 34px;
+      }
+
+      .container_article_group {
+        article {
+          padding: 10px 25px 40px;
+
+          span {
+            img {
+              max-width: 100%;
+            }
+          }
+
+          h5 {
+            font-size: 20px;
+          }
+
+          p {
+            font-size: 16px;
+            line-height: 110%;
+            padding: 0 3px;
+          }
+        }
+      }
+    }
+
+  }
+  @media(max-width: 767px) {
+
+    .why_do {
+      .container {
+        h2 {
+          font-size: 30px;
+        }
+
+        .container_article_group {
+          article {
+            padding: 0 15px 20px;
+
+            span {
+              img {
+                max-width: 70%;
+              }
+            }
+
+            h5 {
+              font-size: 16px;
+            }
+
+            p {
+              font-size: 12px;
+              line-height: 100%;
+              padding: 5px 3px;
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+  @media(max-width: 575px) {
+    .why_do {
+      .container {
+        h2 {
+          font-size: 24px;
+        }
+
+        .container_article_group {
+          article {
+            padding: 10px 10px 10px;
+
+            span {
+              img {
+                display: none;
+              }
+            }
+
+            h5 {
+              font-size: 14px;
+            }
+
+            p {
+              font-size: 10px;
+              line-height: 80%;
+              padding: 5px 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media(max-width: 428px) {
+    .why_do {
+      padding: 40px 0 40px;
+
+      .container {
+        min-width: 360px;
+
+        h2 {
+          font-size: 14px;
+        }
+
+        .container_article_group {
+          flex-direction: column;
+
+          article {
+            padding: 5px 5px 5px;
+
+            span {
+              img {
+                display: none;
+              }
+            }
+
+            h5 {
+              font-size: 12px;
+            }
+
+            p {
+              font-size: 10px;
+              line-height: 80%;
+              padding: 5px 5px;
+            }
+          }
         }
       }
     }

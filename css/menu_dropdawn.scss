@@ -25,7 +25,7 @@
       h1 {
         color: $dark;
         font-size: 48px;
-        font-family:$inter;
+        font-family: $inter;
         font-weight: 600;
         line-height: 120%;
         margin: 0 0 22px 0;
@@ -44,7 +44,7 @@
         text-decoration: none;
         color: $black;
         font-size: 18px;
-        font-family:$inter;
+        font-family: $inter;
         font-weight: 600;
         line-height: 28px;
         padding: 14px 32px;
@@ -76,5 +76,17 @@
     font-size: 16px;
     font-family: $iawriterduov;
     line-height: 20px;
+  }
+}
+
+.heropage_component_container {
+  span {
+    svg {
+      @include max-screen(1300px) {
+        max-width: 70%;
+
+      }
+
+    }
   }
 }
