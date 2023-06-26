@@ -654,7 +654,7 @@ footer .container .ft_right img {
 
 .main_banner {
   background: linear-gradient(180deg, #FFF 0%, #F4F8FF 100%);
-  padding-bottom: 122px;
+  padding: 0 15px 122px;
 }
 .main_banner .container {
   max-width: 1180px;
@@ -702,7 +702,7 @@ footer .container .ft_right img {
   border-radius: 10px;
   background-color: #01F4AB;
 }
-.main_banner .container span {
+.main_banner .container .image_main {
   padding: 33px 0;
   position: relative;
   left: 60px;
@@ -723,12 +723,52 @@ footer .container .ft_right img {
   line-height: 20px;
 }
 
-@media screen and (max-width: 1300px) {
-  .heropage_component_container span svg {
+@media (max-width: 1300px) {
+  .col-6 {
+    width: 50%;
+  }
+}
+@media (max-width: 1024px) {
+  .main_banner .container .heropage_component_container .heropage_component_info h1 {
+    font-size: 30px;
+  }
+  .main_banner .container .heropage_component_container .image_main svg {
     max-width: 70%;
   }
 }
-
+@media (max-width: 991px) {
+  .flexbox_group {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .flexbox_group p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .main_banner {
+    padding: 0 15px;
+    text-align: center;
+  }
+  .heropage_component_info {
+    width: 100%;
+  }
+  .image_main {
+    display: none;
+  }
+  .flexbox_group {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .heropage_component_info {
+    padding: 35px 0;
+  }
+  .heropage_component_info p {
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+}
 .why_do {
   background-color: #FFFFFF;
   padding: 92px 15px 99px;
