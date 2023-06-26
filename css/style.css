@@ -1029,6 +1029,7 @@ footer .container .ft_right img {
 }
 .pricing .container {
   max-width: 1252px;
+  min-width: 360px;
   margin: auto;
 }
 .pricing .container h2 {
@@ -1132,6 +1133,239 @@ footer .container .ft_right img {
   letter-spacing: 0.35px;
 }
 
+@media (max-width: 1265px) {
+  .pricing {
+    padding: 60px 15px;
+  }
+  .pricing .container .price_cols {
+    gap: 30px;
+  }
+  .pricing .container .price_cols a {
+    padding: 14px 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .pricing {
+    padding: 60px 0;
+  }
+  .pricing .container .price_cols {
+    gap: 30px;
+  }
+  .pricing .container .price_cols a {
+    padding: 14px 30px;
+  }
+}
+/*@media (max-width: 991px) {
+  .pricing {
+    padding: 60px 15px;
+
+    .container {
+      h2 {
+        font-size: 42px;
+      }
+      .price_cols {
+        gap: 30px;
+        article {
+          h4 {
+            font-size: 18px;
+            margin-bottom: 16px;
+          }
+          .price {
+            span {
+              &:nth-child(2) {
+
+              }
+            }
+          }
+
+          a {
+            padding: 14px 30px;
+            font-size: 16px;
+            margin-bottom: 40px;
+          }
+
+          p {
+            font-size: 14px;
+            line-height: 18px;
+            &:nth-child(5) {
+              font-size: 14px;
+              line-height: 18px;
+            }
+          }
+        }
+
+
+      }
+
+      .pricing_wrapper {
+        p {
+        }
+
+        a {
+        }
+      }
+    }
+  }
+}*/
+@media (max-width: 991px) {
+  .pricing {
+    padding: 60px 15px;
+  }
+  .pricing .container h2 {
+    font-size: 36px;
+  }
+  .pricing .container .price_cols {
+    gap: 25px;
+  }
+  .pricing .container .price_cols article h4 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .pricing .container .price_cols article .price span {
+    font-size: 26px;
+  }
+  .pricing .container .price_cols article .price span:nth-child(2) {
+    font-size: 10px;
+  }
+  .pricing .container .price_cols article a {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .pricing .container .price_cols article p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .pricing .container .price_cols article p:nth-child(5) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .pricing .container .pricing_wrapper p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .pricing {
+    padding: 40px 15px;
+  }
+  .pricing .container h2 {
+    font-size: 32px;
+  }
+  .pricing .container .price_cols {
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .pricing .container .price_cols article h4 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .pricing .container .price_cols article .price span {
+    font-size: 26px;
+  }
+  .pricing .container .price_cols article .price span:nth-child(2) {
+    font-size: 10px;
+  }
+  .pricing .container .price_cols article a {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .pricing .container .price_cols article p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .pricing .container .price_cols article p:nth-child(5) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .pricing .container .pricing_wrapper p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 575px) {
+  .pricing {
+    padding: 40px 15px;
+  }
+  .pricing .container h2 {
+    font-size: 28px;
+  }
+  .pricing .container .price_cols {
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .pricing .container .price_cols article h4 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .pricing .container .price_cols article .price span {
+    font-size: 26px;
+  }
+  .pricing .container .price_cols article .price span:nth-child(2) {
+    font-size: 10px;
+  }
+  .pricing .container .price_cols article a {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .pricing .container .price_cols article p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .pricing .container .price_cols article p:nth-child(5) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .pricing .container .pricing_wrapper p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 428px) {
+  .pricing {
+    padding: 20px 0;
+  }
+  .pricing .container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .pricing .container .price_cols {
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .pricing .container .price_cols article h4 {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .pricing .container .price_cols article .price {
+    margin-bottom: 0;
+  }
+  .pricing .container .price_cols article .price span {
+    font-size: 26px;
+  }
+  .pricing .container .price_cols article .price span:nth-child(2) {
+    font-size: 10px;
+  }
+  .pricing .container .price_cols article a {
+    padding: 4px 8px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .pricing .container .price_cols article p {
+    font-size: 10px;
+    line-height: 16px;
+    margin-bottom: 5px;
+  }
+  .pricing .container .price_cols article p:nth-child(5) {
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .pricing .container .pricing_wrapper p {
+    font-size: 10px;
+  }
+}
 .clients_review {
   background: #F6F9FF;
   padding: 60px 150px 100px;
