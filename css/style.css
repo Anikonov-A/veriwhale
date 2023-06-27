@@ -641,9 +641,19 @@ footer {
   padding: 78px 15px 34px;
   background-color: #001133;
 }
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 20px 15px 20px;
+  }
+}
 footer .container {
   max-width: 1140px;
   margin: auto;
+}
+@media screen and (max-width: 575px) {
+  footer .container .footer_wrapper {
+    justify-content: center;
+  }
 }
 footer .container p {
   font-size: 14px;
@@ -653,11 +663,37 @@ footer .container p {
   color: #E7E7E7;
   opacity: 0.6;
 }
+@media screen and (max-width: 768px) {
+  footer .container p {
+    font-size: 12px;
+    line-height: 10px;
+  }
+}
+@media screen and (max-width: 575px) {
+  footer .container p {
+    text-align: center;
+  }
+}
 footer .container .ft_left {
   margin-bottom: 74px;
 }
+@media screen and (max-width: 768px) {
+  footer .container .ft_left {
+    margin-bottom: 40px;
+  }
+}
 footer .container .ft_left ul:first-of-type {
   margin-right: 120px;
+}
+@media screen and (max-width: 768px) {
+  footer .container .ft_left ul:first-of-type {
+    margin-right: 60px;
+  }
+}
+@media screen and (max-width: 575px) {
+  footer .container .ft_left ul:first-of-type {
+    margin-right: 120px;
+  }
 }
 footer .container .ft_left ul li {
   margin: 4px 0;
@@ -670,6 +706,13 @@ footer .container .ft_left ul li:first-of-type {
   color: #FFFFFF;
   margin-bottom: 28px;
 }
+@media screen and (max-width: 768px) {
+  footer .container .ft_left ul li:first-of-type {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+}
 footer .container .ft_left ul li a {
   text-decoration: none;
   font-size: 14px;
@@ -677,6 +720,11 @@ footer .container .ft_left ul li a {
   font-weight: 450;
   line-height: 28px;
   color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  footer .container .ft_left ul li a {
+    font-size: 12px;
+  }
 }
 footer .container .ft_right {
   align-self: flex-end;
@@ -688,12 +736,12 @@ footer .container .ft_right img {
 }
 @media screen and (max-width: 1240px) {
   footer .container .ft_right img {
-    max-width: 100%;
+    max-width: 70%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 575px) {
   footer .container .ft_right img {
-    max-width: 70%;
+    display: none;
   }
 }
 
