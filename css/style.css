@@ -926,6 +926,9 @@ footer .container .ft_right img {
   }
 }
 @media (max-width: 991px) and (max-width: 767px) {
+  .why_do {
+    padding: 46px 15px 46px;
+  }
   .why_do .container h2 {
     font-size: 30px;
   }
@@ -991,6 +994,102 @@ footer .container .ft_right img {
     padding: 5px 5px;
   }
 }
+.products {
+  background-color: #FFFFFF;
+  padding: 36px 15px 120px;
+}
+@media screen and (max-width: 1024px) {
+  .products {
+    padding: 15px 15px 60px;
+  }
+}
+@media screen and (max-width: 418px) {
+  .products {
+    padding: 15px 15px 15px;
+  }
+}
+.products .container {
+  max-width: 1144px;
+  min-width: 360px;
+  margin: auto;
+}
+.products .container h2 {
+  color: #001133;
+  text-align: center;
+  font-size: 48px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 54px;
+}
+@media screen and (max-width: 575px) {
+  .products .container h2 {
+    font-size: 36px;
+    margin-bottom: 27px;
+  }
+}
+.products .container .products_wrapper {
+  gap: 8px;
+}
+@media screen and (max-width: 418px) {
+  .products .container .products_wrapper {
+    justify-content: start;
+  }
+}
+.products .container .products_wrapper article {
+  border-radius: 24px;
+  background: #FFFFFF;
+  box-shadow: 0 0 0 2px #E0E4EB inset;
+  width: 556px;
+}
+@media screen and (max-width: 1210px) {
+  .products .container .products_wrapper article {
+    max-width: 556px;
+  }
+}
+@media screen and (max-width: 418px) {
+  .products .container .products_wrapper article {
+    max-width: 330px;
+  }
+}
+.products .container .products_wrapper article .article_wrapper {
+  padding: 32px 29px 27px 27px;
+}
+@media screen and (max-width: 575px) {
+  .products .container .products_wrapper article .article_wrapper {
+    padding: 16px 15px 14px 14px;
+  }
+}
+@media screen and (max-width: 418px) {
+  .products .container .products_wrapper article .article_wrapper {
+    text-align: center;
+  }
+}
+.products .container .products_wrapper article .article_wrapper h4 {
+  color: #001133;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 9px;
+}
+@media screen and (max-width: 575px) {
+  .products .container .products_wrapper article .article_wrapper h4 {
+    font-size: 20px;
+  }
+}
+.products .container .products_wrapper article .article_wrapper p {
+  color: #001133;
+  font-size: 16px;
+  font-family: "ia_writer_duo_vregular";
+  line-height: 120%;
+}
+@media screen and (max-width: 575px) {
+  .products .container .products_wrapper article .article_wrapper p {
+    font-size: 14px;
+  }
+}
+
 .about_verification {
   background-color: #FFFFFF;
 }
