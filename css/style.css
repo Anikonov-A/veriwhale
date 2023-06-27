@@ -790,6 +790,9 @@ footer .container .ft_right img {
   border-radius: 10px;
   background-color: #01F4AB;
 }
+.main_banner .container .heropage_component_info a:hover {
+  color: #FFFFFF;
+}
 .main_banner .container .image_main {
   padding: 33px 0;
   position: relative;

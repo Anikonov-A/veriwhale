@@ -50,6 +50,10 @@
         padding: 14px 32px;
         border-radius: 10px;
         background-color: $green;
+
+        &:hover {
+          color: $white;
+        }
       }
     }
 
@@ -104,39 +108,45 @@
     }
   }
 }
-@media(max-width: 991px){
+
+@media(max-width: 991px) {
   .flexbox_group {
     margin-left: 15px;
     margin-right: 15px;
-    p{
+
+    p {
       font-size: 12px;
     }
   }
 }
-@media(max-width: 767px){
-  .main_banner{
+
+@media(max-width: 767px) {
+  .main_banner {
     padding: 0 15px;
     text-align: center;
-    .container{
-      .heropage_component_info{
+
+    .container {
+      .heropage_component_info {
         padding: 35px 0;
         width: 100%;
       }
     }
   }
 
-  .image_main{
+  .image_main {
     display: none;
 
   }
-  .flexbox_group{
+  .flexbox_group {
     display: none;
   }
 }
-@media(max-width: 575px){
-  .heropage_component_info{
+
+@media(max-width: 575px) {
+  .heropage_component_info {
     padding: 35px 0;
-    p{
+
+    p {
       font-size: 18px;
       margin-bottom: 35px;
     }
