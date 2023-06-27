@@ -30,7 +30,8 @@
     .products_wrapper {
       gap: 8px;
       @include max-screen(418px) {
-        justify-content: start;
+        justify-content: space-between;
+
 
       }
 

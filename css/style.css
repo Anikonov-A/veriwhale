@@ -1033,7 +1033,7 @@ footer .container .ft_right img {
 }
 @media screen and (max-width: 418px) {
   .products .container .products_wrapper {
-    justify-content: start;
+    justify-content: space-between;
   }
 }
 .products .container .products_wrapper article {
