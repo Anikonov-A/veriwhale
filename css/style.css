@@ -690,11 +690,6 @@ footer .container .ft_left ul:first-of-type {
     margin-right: 60px;
   }
 }
-@media screen and (max-width: 575px) {
-  footer .container .ft_left ul:first-of-type {
-    margin-right: 120px;
-  }
-}
 footer .container .ft_left ul li {
   margin: 4px 0;
 }

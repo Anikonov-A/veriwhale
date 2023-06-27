@@ -44,9 +44,6 @@ footer {
           @include max-screen(768px){
             margin-right:60px ;
           }
-          @include max-screen(575px){
-            margin-right: 120px;
-          }
         }
 
         li {
