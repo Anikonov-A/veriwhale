@@ -1036,7 +1036,12 @@ footer .container .ft_right img {
 }
 @media screen and (max-width: 418px) {
   .products .container .products_wrapper {
-    justify-content: space-between;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 360px) {
+  .products .container .products_wrapper {
+    justify-content: start;
   }
 }
 .products .container .products_wrapper article {

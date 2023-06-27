@@ -30,9 +30,10 @@
     .products_wrapper {
       gap: 8px;
       @include max-screen(418px) {
-        justify-content: space-between;
-
-
+        justify-content: center;
+      }
+      @include max-screen(360px){
+        justify-content: start;
       }
 
       article {
