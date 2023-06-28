@@ -1,0 +1,47 @@
+.cookies {
+  margin: auto;
+  width: 649px;
+
+  .cookieBanner_component_container {
+    padding: 33px;
+    border-radius: 16px;
+    border: 1px solid var(--light-grey, #E7E7E7);
+    background: var(--white, #FFF);
+    box-shadow: 0px -1px 4px 0px rgba(130, 130, 156, 0.10), 1px 8px 20px 0px rgba(130, 130, 156, 0.10), 0px -10px 25px 0px rgba(130, 130, 156, 0.15);
+
+    p {
+      color: $dark;
+      text-align: center;
+      font-size: 14px;
+      font-family: $inter;
+      line-height: 24px;
+      margin-bottom: 24px;
+
+      a {
+        text-decoration: none;
+        color: $blue;
+      }
+    }
+
+    button {
+      color:$dark;
+      font-size: 16px;
+      font-family: $inter;
+      font-weight: 600;
+      line-height: 28px;
+      padding: 14px 32px;
+      border-radius: 16px;
+      background:$white;
+      box-shadow: 0 0 0 1px #E0E4EB inset;
+      margin-right: 4px;
+      margin-left: 4px;
+      border: transparent;
+      cursor: pointer;
+      &:last-of-type{
+        background:$dark;
+        color: $white;
+        box-shadow: none;
+      }
+    }
+  }
+}

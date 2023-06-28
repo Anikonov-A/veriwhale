@@ -2298,6 +2298,50 @@ h6 > span:after {
   max-height: 100vh;
 }
 
+.cookies {
+  margin: auto;
+  width: 649px;
+}
+.cookies .cookieBanner_component_container {
+  padding: 33px;
+  border-radius: 16px;
+  border: 1px solid var(--light-grey, #E7E7E7);
+  background: var(--white, #FFF);
+  box-shadow: 0px -1px 4px 0px rgba(130, 130, 156, 0.1), 1px 8px 20px 0px rgba(130, 130, 156, 0.1), 0px -10px 25px 0px rgba(130, 130, 156, 0.15);
+}
+.cookies .cookieBanner_component_container p {
+  color: #001133;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.cookies .cookieBanner_component_container p a {
+  text-decoration: none;
+  color: #1764FF;
+}
+.cookies .cookieBanner_component_container button {
+  color: #001133;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 28px;
+  padding: 14px 32px;
+  border-radius: 16px;
+  background: #FFFFFF;
+  box-shadow: 0 0 0 1px #E0E4EB inset;
+  margin-right: 4px;
+  margin-left: 4px;
+  border: transparent;
+  cursor: pointer;
+}
+.cookies .cookieBanner_component_container button:last-of-type {
+  background: #001133;
+  color: #FFFFFF;
+  box-shadow: none;
+}
+
 * {
   box-sizing: border-box;
 }
