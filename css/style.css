@@ -2138,7 +2138,7 @@ footer .container .ft_right img {
 }
 @media screen and (max-width: 575px) {
   .get_started_form .container .form {
-    padding: 30px 15px;
+    padding: 60px 15px;
   }
 }
 .get_started_form .container .form h2 {
@@ -2284,6 +2284,7 @@ h6 > span:after {
   justify-content: center;
   visibility: hidden;
   opacity: 0;
+  backdrop-filter: blur(2px);
   transition: opacity 0.4s, visibility 0.4s, transform 0.8s;
   overflow-y: auto;
   transform: scale(0);
