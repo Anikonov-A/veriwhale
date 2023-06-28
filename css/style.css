@@ -2115,6 +2115,53 @@ footer .container .ft_right img {
     font-size: 14px;
   }
 }
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.example_docs {
+  padding: 80px 15px;
+}
+.example_docs .container {
+  max-width: 1100px;
+  margin: auto;
+}
+.example_docs .container .doc_blocks img {
+  margin-bottom: 24px;
+}
+.example_docs .container .doc_blocks h2 {
+  color: #1B1643;
+  text-align: center;
+  font-size: 32px;
+  font-family: "arialbold";
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.64px;
+  margin-bottom: 60px;
+}
+.example_docs .container .doc_blocks h4 {
+  color: #1B1643;
+  font-size: 24px;
+  font-family: "arialbold";
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+.example_docs .container .doc_blocks p {
+  color: #1B1643;
+  font-size: 14px;
+  font-family: "arialregular";
+  line-height: 25.2px;
+  letter-spacing: 0.35px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.example_docs .container .doc_blocks p a {
+  text-decoration: none;
+  color: #1764FF;
+}
+
 .get_started_form {
   margin: 0;
 }
