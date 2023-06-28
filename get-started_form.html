@@ -7,9 +7,42 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>get-started_form</title>
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
-
+<section class="get_started_form modal" id="modal modal2">
+    <div class="container">
+        <div class="form_wrapper d-flex justify-center">
+            <div class="form">
+                <h2>Get started</h2>
+                <h4>Get your API key in seconds</h4>
+                <form method="post" action="#">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" placeholder="jane@doe.com">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                    <img src="img/presentation.svg" alt="Insert Captcha Here">
+                    <button type="submit" class="btn_cont">Continue</button>
+                    <h6><span>Or</span></h6>
+                    <button type="button" class="btn_login">Login</button>
+                </form>
+            </div>
+            <div class="advantages d-flex flex-column align-center">
+                <h3>You're seconds away from your<br>
+                    API key, along with:</h3>
+                <ul>
+                    <li class="d-flex align-center"><img src="img/checkMark.svg"
+                                                         alt="img"><span>15+ powerful API's</span></li>
+                    <li class="d-flex align-center"><img src="img/checkMark.svg" alt="img"><span>Generous plans</span>
+                    </li>
+                    <li class="d-flex align-center"><img src="img/checkMark.svg" alt="img"><span>Transparent and fair
+                        pricing</span></li>
+                    <li class="d-flex align-center"><img src="img/checkMark.svg" alt="img"><span>World-class technical
+                        support</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/script.js"></script>
 </body>
 </html>

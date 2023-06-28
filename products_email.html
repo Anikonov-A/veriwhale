@@ -12,18 +12,18 @@
 <body>
 <header>
     <div class="container d-flex justify-beetween align-center">
-        <a class="header_logo" href="#"><img src="img/logo.svg" alt="logo_header"></a>
+        <a class="header_logo" href="index.html"><img src="img/logo.svg" alt="logo_header"></a>
         <nav>
             <button type="button" class="header_mobile_btn js-mobile-btn"></button>
             <ul class="list d-flex js-mobile-menu header__menu">
                 <li><a href="#">Products</a></li>
-                <li><a href="#">Documentation</a></li>
+                <li><a href="example_docs.html">Documentation</a></li>
                 <li><a href="#">Pricing</a></li>
             </ul>
         </nav>
         <div class="header_link_right">
             <a href="#">Sign up</a>
-            <a href="#">Get started</a>
+            <a href="#" class="modal_btn">Get started</a>
         </div>
     </div>
 </header>
@@ -35,7 +35,7 @@
                     <h4>email verification</h4>
                     <h1>Securely verify email <br> addresses to keep fake <br> accounts out</h1>
                     <p>Improve your delivery rate and clean your <br> email lists with real-time email verification</p>
-                    <a href="#">Get started</a>
+                    <a href="#" class="modal_btn">Get started</a>
                 </div>
                 <div class="image_main col-6">
                     <svg width="460" height="460" viewBox="0 0 460 460" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -377,7 +377,7 @@
                             <span>$9</span>
                             <span>per <br> mouth</span>
                         </div>
-                        <a href="#">Get started</a>
+                        <a href="#" class="modal_btn">Get started</a>
                         <p>5,000 requests /<br>
                             month</p>
                         <p class="price">3 requests / <br> second</p>
@@ -388,7 +388,7 @@
                             <span>$49</span>
                             <span>per <br> mouth</span>
                         </div>
-                        <a href="#">Get started</a>
+                        <a href="#" class="modal_btn">Get started</a>
                         <p>50,000 requests /<br>
                             month</p>
                         <p class="price">10 requests / <br> second</p>
@@ -399,7 +399,7 @@
                             <span>$99</span>
                             <span>per <br> mouth</span>
                         </div>
-                        <a href="#">Get started</a>
+                        <a href="#" class="modal_btn">Get started</a>
                         <p>100,000 requests /<br>
                             month</p>
                         <p class="price">25 requests / <br> second</p>
@@ -410,7 +410,7 @@
                             <span>$199</span>
                             <span>per <br> mouth</span>
                         </div>
-                        <a href="#">Get started</a>
+                        <a href="#" class="modal_btn">Get started</a>
                         <p>250,000 requests /<br>
                             month</p>
                         <p class="price">50 requests / <br> second</p>
@@ -421,7 +421,7 @@
                             <span>$499</span>
                             <span>per <br> mouth</span>
                         </div>
-                        <a href="#">Get started</a>
+                        <a href="#" class="modal_btn">Get started</a>
                         <p>750,000 requests /<br>
                             month</p>
                         <p class="price">100 requests / <br> second</p>
@@ -516,7 +516,41 @@
         <div class="container">
             <div class="get_keys_wrapper">
                 <h2>Get your API key in 10 seconds and<br> start automating workflows</h2>
-                <a href="#">Get started</a>
+                <a href="#" class="modal_btn">Get started</a>
+            </div>
+        </div>
+    </section>
+    <section class="get_started_form modal" id="modal">
+        <div class="container">
+            <div class="form_wrapper d-flex justify-center">
+                <div class="form">
+                    <h2>Get started</h2>
+                    <h4>Get your API key in seconds</h4>
+                    <form method="post" action="#">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" placeholder="jane@doe.com">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password">
+                        <img src="img/presentation.svg" alt="Insert Captcha Here">
+                        <button type="submit" class="btn_cont">Continue</button>
+                        <h6><span>Or</span></h6>
+                        <button type="button" class="btn_login">Login</button>
+                    </form>
+                </div>
+                <div class="advantages d-flex flex-column align-center">
+                    <h3>You're seconds away from your<br>
+                        API key, along with:</h3>
+                    <ul>
+                        <li class="d-flex align-center"><img src="img/checkMark.svg"
+                                                             alt="img"><span>15+ powerful API's</span></li>
+                        <li class="d-flex align-center"><img src="img/checkMark.svg" alt="img"><span>Generous plans</span>
+                        </li>
+                        <li class="d-flex align-center"><img src="img/checkMark.svg" alt="img"><span>Transparent and fair
+                        pricing</span></li>
+                        <li class="d-flex align-center"><img src="img/checkMark.svg" alt="img"><span>World-class technical
+                        support</span></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -527,8 +561,8 @@
             <div class="ft_left d-flex">
                 <ul>
                     <li>Products</li>
-                    <li><a href="#">Email Validation API</a></li>
-                    <li><a href="#">Phone Validation API</a></li>
+                    <li><a href="products_email.html">Email Validation API</a></li>
+                    <li><a href="products_phone.html">Phone Validation API</a></li>
                     <li><a href="#">IBAN Validation API</a></li>
                     <li><a href="#">---</a></li>
                     <li><a href="#">---</a></li>
@@ -543,7 +577,7 @@
                 </ul>
             </div>
             <div class="ft_right">
-                <a class="footer_logo" href="#"><img src="img/footer_logo.svg" alt="footer_logo"></a>
+                <a class="footer_logo" href="index.html"><img src="img/footer_logo.svg" alt="footer_logo"></a>
             </div>
         </div>
         <p>© Veriwhale. 2014-2023. All rights reserved.</p>

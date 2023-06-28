@@ -27,6 +27,10 @@ header {
           font-family: $inter;
           font-weight: 600;
           line-height: 22px;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
 
       }
@@ -40,6 +44,11 @@ header {
         font-family: $inter;
         font-weight: 600;
         line-height: 22px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
         @include max-screen(991px) {
           font-size: 14px;
         }
@@ -56,7 +65,7 @@ header {
         }
 
         &:last-of-type:hover {
-          color: $white;
+          text-decoration: underline;
         }
 
         @include max-screen(1024px) {

@@ -532,6 +532,9 @@ header .container .list li a {
   font-weight: 600;
   line-height: 22px;
 }
+header .container .list li a:hover {
+  text-decoration: underline;
+}
 header .container .header_link_right a {
   text-decoration: none;
   color: #001133;
@@ -539,6 +542,9 @@ header .container .header_link_right a {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   line-height: 22px;
+}
+header .container .header_link_right a:hover {
+  text-decoration: underline;
 }
 @media screen and (max-width: 991px) {
   header .container .header_link_right a {
@@ -557,7 +563,7 @@ header .container .header_link_right a:last-of-type {
   border-radius: 30px;
 }
 header .container .header_link_right a:last-of-type:hover {
-  color: #FFFFFF;
+  text-decoration: underline;
 }
 @media screen and (max-width: 1024px) {
   header .container .header_link_right a:last-of-type {
@@ -791,7 +797,7 @@ footer .container .ft_right img {
   background-color: #01F4AB;
 }
 .main_banner .container .heropage_component_info a:hover {
-  color: #FFFFFF;
+  text-decoration: underline;
 }
 .main_banner .container .image_main {
   padding: 33px 0;
@@ -2062,8 +2068,7 @@ footer .container .ft_right img {
   text-decoration: none;
 }
 .get_keys .container .get_keys_wrapper a:hover {
-  color: #FFFFFF;
-  background-color: #1764FF;
+  text-decoration: underline;
 }
 
 @media (max-width: 1024px) {
@@ -2110,6 +2115,188 @@ footer .container .ft_right img {
     font-size: 14px;
   }
 }
+.get_started_form {
+  margin: 0;
+}
+.get_started_form .container {
+  max-width: 1440px;
+  margin: auto;
+}
+.get_started_form .container .form {
+  padding: 126px 176px;
+  background-color: #F9FAFB;
+}
+@media screen and (max-width: 1300px) {
+  .get_started_form .container .form {
+    padding: 126px 88px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .get_started_form .container .form {
+    padding: 87px 60px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .get_started_form .container .form {
+    padding: 30px 15px;
+  }
+}
+.get_started_form .container .form h2 {
+  color: #001133;
+  font-size: 30px;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  line-height: 36px;
+  margin-bottom: 12px;
+}
+.get_started_form .container .form h4 {
+  color: #4B5563;
+  font-size: 16px;
+  font-family: "ia_writer_duo_vregular";
+  line-height: 120%;
+  margin-bottom: 48px;
+}
+.get_started_form .container .form form {
+  display: flex;
+  flex-direction: column;
+}
+.get_started_form .container .form form label {
+  color: #374151;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 6px;
+}
+.get_started_form .container .form form input {
+  border-radius: 6px;
+  border: 1px solid #D1D5DB;
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  padding: 11px 13px;
+  margin-bottom: 24px;
+}
+.get_started_form .container .form form img {
+  margin-bottom: 31px;
+}
+.get_started_form .container .form form button {
+  color: #001133;
+  padding: 14px 32px;
+  background-color: #01F4AB;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 28px;
+  border-radius: 10px;
+  border: transparent;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.get_started_form .container .form form button:hover {
+  text-decoration: underline;
+}
+.get_started_form .container .form form button:last-of-type {
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #D1D5DB;
+  background: transparent;
+}
+.get_started_form .container .advantages {
+  padding: 120px 120px;
+  background-color: #FFFFFF;
+}
+@media screen and (max-width: 1300px) {
+  .get_started_form .container .advantages {
+    padding: 90px 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .get_started_form .container .advantages {
+    display: none;
+  }
+}
+.get_started_form .container .advantages h3 {
+  padding-top: 160px;
+  color: #001133;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 33px;
+}
+@media screen and (max-width: 991px) {
+  .get_started_form .container .advantages h3 {
+    font-size: 20px;
+  }
+}
+.get_started_form .container .advantages li {
+  color: #001133;
+  font-size: 16px;
+  font-family: "ia_writer_duo_vregular";
+  line-height: 120%;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+
+h6 {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 0 17px 0;
+  color: #333C4D;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  line-height: 20px;
+}
+
+h6 > span {
+  display: inline-block;
+  margin: 0 0.4em;
+}
+
+h6 > span:before,
+h6 > span:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-top: 1px solid #D1D5DB;
+  margin-top: 0.6em;
+}
+
+h6 > span:before {
+  margin-left: -102%;
+}
+
+h6 > span:after {
+  margin-left: 2%;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s, visibility 0.4s, transform 0.8s;
+  overflow-y: auto;
+  transform: scale(0);
+}
+
+.modal.open {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+  overflow: hidden;
+  max-height: 100vh;
+}
+
 * {
   box-sizing: border-box;
 }

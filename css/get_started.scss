@@ -1,0 +1,184 @@
+.get_started_form {
+  margin: 0;
+
+  .container {
+    max-width: 1440px;
+    margin: auto;
+
+    .form {
+      padding: 126px 176px;
+      background-color: $leftPartOfFormBg;
+      @include max-screen(1300px) {
+        padding: 126px 88px;
+      }
+      @include max-screen(991px) {
+        padding: 87px 60px;
+      }
+      @include max-screen(575px){
+        padding: 30px 15px;
+      }
+
+      h2 {
+        color: $dark;
+        font-size: 30px;
+        font-family: $inter;
+        font-weight: 800;
+        line-height: 36px;
+        margin-bottom: 12px;
+      }
+
+      h4 {
+        color: $textgraycolor;
+        font-size: 16px;
+        font-family: $iawriterduov;
+        line-height: 120%;
+        margin-bottom: 48px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          color: #374151;
+          font-size: 14px;
+          font-family: $inter;
+          font-weight: 600;
+          line-height: 20px;
+          margin-bottom: 6px;
+        }
+
+        input {
+          border-radius: 6px;
+          border: 1px solid #D1D5DB;
+          background: #FFF;
+          box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+          padding: 11px 13px;
+          margin-bottom: 24px;
+        }
+
+        img {
+          margin-bottom: 31px;
+        }
+
+        button {
+          color: $dark;
+          padding: 14px 32px;
+          background-color: $green;
+          font-size: 18px;
+          font-family: $inter;
+          font-weight: 600;
+          line-height: 28px;
+          border-radius: 10px;
+          border: transparent;
+          cursor: pointer;
+          margin-bottom: 20px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+
+          &:last-of-type {
+            font-size: 16px;
+            border-radius: 10px;
+            border: 1px solid #D1D5DB;
+            background: transparent;
+          }
+        }
+
+      }
+    }
+
+    .advantages {
+      padding: 120px 120px;
+      background-color: $white;
+      @include max-screen(1300px) {
+        padding: 90px 60px;
+      }
+      @include max-screen(768px){
+        display: none;
+      }
+
+      h3 {
+        padding-top: 160px;
+        color: $dark;
+        text-align: center;
+        font-size: 24px;
+        font-family: $inter;
+        font-weight: 600;
+        line-height: 120%;
+        margin-bottom: 33px;
+        @include max-screen(991px) {
+  font-size: 20px;
+        }
+      }
+
+
+      li {
+        color: $dark;
+        font-size: 16px;
+        font-family: $iawriterduov;
+        line-height: 120%;
+        margin-bottom: 20px;
+        gap: 12px;
+      }
+    }
+  }
+}
+
+h6 {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 0 17px 0;
+  color: $greyBody;
+  font-size: 14px;
+  font-family: $inter;
+  line-height: 20px;
+}
+
+h6 > span {
+  display: inline-block;
+  margin: 0 .4em;
+}
+
+h6 > span:before,
+h6 > span:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  border-top: 1px solid #D1D5DB;
+  margin-top: .6em;
+}
+
+h6 > span:before {
+  margin-left: -102%;
+}
+
+h6 > span:after {
+  margin-left: 2%;
+}
+.modal{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s, visibility 0.4s,transform 0.8s;
+  overflow-y: auto;
+  transform: scale(0);
+}
+.modal.open{
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+  overflow: hidden;
+  max-height: 100vh;
+
+}
