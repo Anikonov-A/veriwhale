@@ -44,6 +44,223 @@
             </div>
         </div>
     </section>
+    <section class="example_docs mb40">
+        <div class="container">
+            <div class="table">
+                <h4 class="mb40">Email Validation API - Request Parameters</h4>
+                <div style="display: grid; grid-template-columns: 2fr 1fr auto;gap: 20px">
+                    <div class="th"><p>PARAMETER</p></div>
+                    <div class="th"><p>TYPE</p></div>
+                    <div class="th"><p>DETAILS</p></div>
+                    <div class="tcol1"><span>api_key</span><span>required</span></div>
+                    <div class="tcol2"><p>String</p></div>
+                    <div class="tcol3"><p>Your unique API key. Note that each user has unique API keys for each of
+                        Abstract's APIs, so<br>
+                        your Exchange Rate API key will not work for as your IP Geolocation API key, for example.</p>
+                    </div>
+                    <div class="tcol1"><span>api_key</span><span>required</span></div>
+                    <div class="tcol2"><p>String</p></div>
+                    <div class="tcol3"><p>The email address to validate.</p></div>
+                </div>
+            </div>
+            <div class="table">
+                <h4>Email Validation API- Response</h4>
+                <p class="paragraph">The API response is returned in a universal and lightweight <a>JSON format.</a></p>
+                <div style="display: grid; grid-template-columns: 2fr 1fr auto;gap: 20px">
+                    <div class="th"><p>PARAMETER</p></div>
+                    <div class="th"><p>TYPE</p></div>
+                    <div class="th"><p>DETAILS</p></div>
+                    <div class="tcol1">
+                        <p>email</p>
+                    </div>
+                    <div class="tcol2">
+                        <p>String</p>
+                    </div>
+                    <div class="tcol3">
+                        <p>The value for "email" that was entered into the request.</p>
+                    </div>
+                    <div class="tcol1">
+                        <p>auto_correct</p>
+                    </div>
+                    <div class="tcol2">
+                        <p>String</p>
+                    </div>
+                    <div class="tcol3">
+                        <p>If a typo has been detected then this parameter returns a suggestion of the correct email
+                            <br>
+                            (e.g., johnsmith@gmial.com => johnsmith@gmail.com). If no typo is detected then this is <br>
+                            empty.</p>
+                    </div>
+                    <div class="tcol1">
+                        <p>is_valid_format</p>
+                    </div>
+                    <div class="tcol2">
+                        <p>Boolean</p>
+                    </div>
+                    <div class="tcol3">
+                        <p>Is true if the email follows the format of "address @ domain . TLD". If any of those elements
+                            <br>
+                            are missing or if they contain extra or incorrect special characters, then it returns false.
+                        </p>
+                    </div>
+                    <div class="tcol1">
+                        <p>is_free_email</p>
+                    </div>
+                    <div class="tcol2">
+                        <p>Boolean</p>
+                    </div>
+                    <div class="tcol3">
+                        <p>Is true if the email's domain is found among Abstract's list of free email providers (e.g.,
+                            <a href="#">Gmail,
+                                Yahoo</a>, etc).</p>
+                    </div>
+                    <div class="tcol1">
+                        <p>is_disposable_email</p>
+                    </div>
+                    <div class="tcol2">
+                        <p>Boolean</p>
+                    </div>
+                    <div class="tcol3">
+                        <p>Is true if the email's domain is found among Abstract's list of disposable email providers
+                            (e.g.,<br>
+                            <a href="#">Mailinator, Yopmail</a>, etc).</p>
+                    </div>
+                    <div class="tcol1">
+                        <p>is_role_email</p>
+                    </div>
+                    <div class="tcol2">
+                        <p>Boolean</p>
+                    </div>
+                    <div class="tcol3">
+                        <p>Is true if the email's local part (e.g., the "to" part) appears to be for a role rather
+                            than<br>
+                            individual.Examples of this include "team@", "sales@", info@", etc.</p>
+                    </div>
+                    <div class="tcol1">
+                        <p>is_catchall_email</p>
+                    </div>
+                    <div class="tcol2">
+                        <p>Boolean</p>
+                    </div>
+                    <div class="tcol3">
+                        <p>Is true if the domain is configured to <a href="#">catch all email.</a></p>
+                    </div>
+                    <div class="tcol1">
+                        <p>is_mx_found</p>
+                    </div>
+                    <div class="tcol2">
+                        <p>Boolean</p>
+                    </div>
+                    <div class="tcol3">
+                        <p>Is true if <a href="#">MX Records</a> for the domain can be found.</p>
+                    </div>
+                    <div class="tcol1">
+                        <p>is_smtp_valid</p>
+                    </div>
+                    <div class="tcol2">
+                        <p>Boolean</p>
+                    </div>
+                    <div class="tcol3">
+                        <p>Is true is the <a href="#">SMTP check</a> of the domain was successful.</p>
+                    </div>
+                    <div class="tcol1">
+                        <p>quality_score</p>
+                    </div>
+                    <div class="tcol2">
+                        <p>Number</p>
+                    </div>
+                    <div class="tcol3">
+                        <p>An internal decimal score between 0.01 and 0.99 reflecting Abstract's confidence in the
+                            quality<br>
+                            and deliverability of the submitted email.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="example_docs mb40">
+        <div class="container">
+            <div class="doc_blocks">
+                <h4>Example: A Misspelled Email</h4>
+                <p>In the example below, we show the request and response when the API detects a possible <br>
+                    misspelling in the requested email.</p>
+                <p>Note that even if a possible misspelling is detected, all of the other checks on that email (e.g.,
+                    free email, disposable domain, etc) will still be done against the original
+                    <br>
+                    submitted email, not against the autocorrected email.</p>
+                <img src="img/docs4.jpg" alt="example">
+                <p>The request was valid and successful, and so it returns the following:</p>
+                <img src="/img/docs5.jpg" alt="example" class="mb40">
+                <h4>Example: A Malformed Email</h4>
+                <p>In the example below, we show the request and response for an email does not follow the proper
+                    format. If the email fails the is_valid_format check, then the other
+                    <br>
+                    checks (e.g., is_free_email, is_role_email) will not be performed and will be returned as false</p>
+                <img src="img/docs6.jpg" alt="example">
+                <p>The request was valid and successful, and so it returns the following:</p>
+                <img src="img/docs7.jpg" alt="example" class="mb40">
+            </div>
+            <div class="table">
+                <h4>Response and Error Codes</h4>
+                <p class="mb10">Whenever you make a request that fails for some reason, an error is returned also in the
+                    JSON format.
+                    The errors include an error code and description, which you can<br>
+                    find in detail below.</p>
+                <div style="display: grid; grid-template-columns: 2fr 1fr auto;gap: 20px">
+                    <div class="th"><p>CODE</p></div>
+                    <div class="th"><p>TYPE</p></div>
+                    <div class="th"><p>DETAILS</p></div>
+                    <div class="tcol1 text-center" >
+                        <span class=" backround-gray" style="color:#1B1643;">200</span>
+                    </div>
+                    <div class="tcol2">
+                        <p>OK</p>
+                    </div>
+                    <div class="tcol3">
+                        <p>Everything worked as expected.</p>
+                    </div>
+                    <div class="tcol1 text-center">
+                        <span class="backround-gray" style="color:#1B1643;">400</span>
+                    </div>
+                    <div class="tcol2">
+                        <p>Bad request</p>
+                    </div>
+                    <div class="tcol3">
+                        <p>Bad request</p>
+                    </div>
+                    <div class="tcol1 text-center">
+                        <span class="backround-gray" style="color:#1B1643;">401</span>
+                    </div>
+                    <div class="tcol2">
+                        <span>Unauthorized</span>
+                    </div>
+                    <div class="tcol3">
+                        <p>The request was unacceptable. Typically due to the API key missing or incorrect.</p>
+                    </div>
+                    <div class="tcol1 text-center">
+                        <span class="backround-gray" style="color:#1B1643;">500</span>
+                    </div>
+                    <div class="tcol2">
+                        <p>Internal Server Error</p>
+                    </div>
+                    <div class="tcol3">
+                        <p>The request could not be completed due to an error on the server side.</p>
+                    </div>
+                    <div class="tcol1 text-center">
+                        <span class="backround-gray" style="color:#1B1643;">503</span>
+                    </div>
+                    <div class="tcol2">
+                        <p>Service Unavailable</p>
+                    </div>
+                    <div class="tcol3">
+                        <p>The server was unavailable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
 
 </main>
 </body>
