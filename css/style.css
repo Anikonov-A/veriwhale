@@ -2480,7 +2480,7 @@ h6 > span:after {
 
 .cookies {
   margin: auto;
-  width: 649px;
+  max-width: 649px;
 }
 .cookies .cookieBanner_component_container {
   padding: 33px;
@@ -2489,6 +2489,11 @@ h6 > span:after {
   background: var(--white, #FFF);
   box-shadow: 0px -1px 4px 0px rgba(130, 130, 156, 0.1), 1px 8px 20px 0px rgba(130, 130, 156, 0.1), 0px -10px 25px 0px rgba(130, 130, 156, 0.15);
 }
+@media screen and (max-width: 360px) {
+  .cookies .cookieBanner_component_container {
+    padding: 10px;
+  }
+}
 .cookies .cookieBanner_component_container p {
   color: #001133;
   text-align: center;
@@ -2496,6 +2501,11 @@ h6 > span:after {
   font-family: "Inter", sans-serif;
   line-height: 24px;
   margin-bottom: 24px;
+}
+@media screen and (max-width: 428px) {
+  .cookies .cookieBanner_component_container p {
+    font-size: 12px;
+  }
 }
 .cookies .cookieBanner_component_container p a {
   text-decoration: none;
@@ -2515,6 +2525,13 @@ h6 > span:after {
   margin-left: 4px;
   border: transparent;
   cursor: pointer;
+}
+@media screen and (max-width: 575px) {
+  .cookies .cookieBanner_component_container button {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 14px 20px;
+  }
 }
 .cookies .cookieBanner_component_container button:last-of-type {
   background: #001133;

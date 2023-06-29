@@ -1,6 +1,6 @@
 .cookies {
   margin: auto;
-  width: 649px;
+  max-width: 649px;
 
   .cookieBanner_component_container {
     padding: 33px;
@@ -8,6 +8,9 @@
     border: 1px solid var(--light-grey, #E7E7E7);
     background: var(--white, #FFF);
     box-shadow: 0px -1px 4px 0px rgba(130, 130, 156, 0.10), 1px 8px 20px 0px rgba(130, 130, 156, 0.10), 0px -10px 25px 0px rgba(130, 130, 156, 0.15);
+    @include max-screen(360px) {
+      padding: 10px;
+    }
 
     p {
       color: $dark;
@@ -16,6 +19,10 @@
       font-family: $inter;
       line-height: 24px;
       margin-bottom: 24px;
+      @include max-screen(428px) {
+        font-size: 12px;
+      }
+
 
       a {
         text-decoration: none;
@@ -24,21 +31,27 @@
     }
 
     button {
-      color:$dark;
+      color: $dark;
       font-size: 16px;
       font-family: $inter;
       font-weight: 600;
       line-height: 28px;
       padding: 14px 32px;
       border-radius: 16px;
-      background:$white;
+      background: $white;
       box-shadow: 0 0 0 1px #E0E4EB inset;
       margin-right: 4px;
       margin-left: 4px;
       border: transparent;
       cursor: pointer;
-      &:last-of-type{
-        background:$dark;
+      @include max-screen(575px) {
+        font-size: 12px;
+        line-height: 14px;
+        padding: 14px 20px;
+      }
+
+      &:last-of-type {
+        background: $dark;
         color: $white;
         box-shadow: none;
       }
