@@ -24,6 +24,14 @@ main {
   background: #D0D8DF;
   padding: 2px 8px;
 }
+.grid_table{
+  display: grid;
+  grid-template-columns: 2fr 1fr auto;
+  gap: 20px;
+  @include max-screen(768px){
+    gap: 10px;
+  }
+}
 
 main {
   .example_docs {
@@ -84,55 +92,49 @@ main {
             font-size: 12px;
             line-height: 12.5px;
           }
+          @include max-screen(768px){
+            font-size: 10px;
+          }
 
           span {
-            &:last-of-type {
-              margin-left: 3px;
-              border-radius: 4px;
-              background: #D9D9D9;
-              color: $requiredColor;
-              font-size: 14px;
-              font-family: $arialBold;
-              font-style: normal;
-              font-weight: 700;
-              line-height: 25.2px;
-              letter-spacing: 0.35px;
-              text-transform: uppercase;
-              @include max-screen(991px) {
-                font-size: 12px;
-                line-height: 12.5px;
-              }
-              @include max-screen(768px) {
-                font-size: 10px;
-                margin-left: 0;
 
-              }
+            @include max-screen(991px) {
+              font-size: 12px;
+              line-height: 12.5px;
+            }
+            @include max-screen(768px) {
+              font-size: 10px;
+              margin-left: 0;
+
             }
           }
         }
-        .tcol2, .tcol3 {
-          color: $textColor;
-          font-size: 14px;
-          font-family: $arialRegular;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 25.2px;
-          letter-spacing: 0.35px;
-          @include max-screen(991px) {
-            font-size: 12px;
-            line-height: 12.5px;
-          }
-        }
-
       }
+
+      .tcol2, .tcol3 {
+        color: $textColor;
+        font-size: 14px;
+        font-family: $arialRegular;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25.2px;
+        letter-spacing: 0.35px;
+        @include max-screen(991px) {
+          font-size: 12px;
+          line-height: 12.5px;
+        }
+      }
+
     }
   }
 }
+
 .doc_blocks {
   img {
     width: 100%;
     margin-bottom: 24px;
   }
+
   h2 {
     color: $textColor;
     text-align: center;
@@ -187,4 +189,18 @@ main {
     text-decoration: none;
 
   }
+}
+
+.color-orange {
+  margin-left: 3px;
+  border-radius: 4px;
+  background: #D9D9D9;
+  color: $requiredColor;
+  font-size: 14px;
+  font-family: $arialBold;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25.2px;
+  letter-spacing: 0.35px;
+  text-transform: uppercase;
 }

@@ -48,17 +48,17 @@
         <div class="container">
             <div class="table">
                 <h4 class="mb40">Email Validation API - Request Parameters</h4>
-                <div style="display: grid; grid-template-columns: 2fr 1fr auto;gap: 20px">
+                <div class="grid_table">
                     <div class="th"><p>PARAMETER</p></div>
                     <div class="th"><p>TYPE</p></div>
                     <div class="th"><p>DETAILS</p></div>
-                    <div class="tcol1"><span>api_key</span><span>required</span></div>
+                    <div class="tcol1"><span>api_key</span><span class="color-orange">required</span></div>
                     <div class="tcol2"><p>String</p></div>
                     <div class="tcol3"><p>Your unique API key. Note that each user has unique API keys for each of
                         Abstract's APIs, so<br>
                         your Exchange Rate API key will not work for as your IP Geolocation API key, for example.</p>
                     </div>
-                    <div class="tcol1"><span>api_key</span><span>required</span></div>
+                    <div class="tcol1"><span>api_key</span><span class="color-orange">required</span></div>
                     <div class="tcol2"><p>String</p></div>
                     <div class="tcol3"><p>The email address to validate.</p></div>
                 </div>
@@ -66,7 +66,7 @@
             <div class="table">
                 <h4>Email Validation API- Response</h4>
                 <p class="paragraph">The API response is returned in a universal and lightweight <a>JSON format.</a></p>
-                <div style="display: grid; grid-template-columns: 2fr 1fr auto;gap: 20px">
+                <div class="grid_table">
                     <div class="th"><p>PARAMETER</p></div>
                     <div class="th"><p>TYPE</p></div>
                     <div class="th"><p>DETAILS</p></div>
@@ -206,12 +206,12 @@
                     JSON format.
                     The errors include an error code and description, which you can<br>
                     find in detail below.</p>
-                <div style="display: grid; grid-template-columns: 2fr 1fr auto;gap: 20px">
+                <div class="grid_table">
                     <div class="th"><p>CODE</p></div>
                     <div class="th"><p>TYPE</p></div>
                     <div class="th"><p>DETAILS</p></div>
                     <div class="tcol1 text-center" >
-                        <span class=" backround-gray" style="color:#1B1643;">200</span>
+                        <span class=" backround-gray">200</span>
                     </div>
                     <div class="tcol2">
                         <p>OK</p>
@@ -220,7 +220,7 @@
                         <p>Everything worked as expected.</p>
                     </div>
                     <div class="tcol1 text-center">
-                        <span class="backround-gray" style="color:#1B1643;">400</span>
+                        <span class="backround-gray">400</span>
                     </div>
                     <div class="tcol2">
                         <p>Bad request</p>
@@ -229,7 +229,7 @@
                         <p>Bad request</p>
                     </div>
                     <div class="tcol1 text-center">
-                        <span class="backround-gray" style="color:#1B1643;">401</span>
+                        <span class="backround-gray">401</span>
                     </div>
                     <div class="tcol2">
                         <span>Unauthorized</span>
@@ -238,7 +238,7 @@
                         <p>The request was unacceptable. Typically due to the API key missing or incorrect.</p>
                     </div>
                     <div class="tcol1 text-center">
-                        <span class="backround-gray" style="color:#1B1643;">500</span>
+                        <span class="backround-gray">500</span>
                     </div>
                     <div class="tcol2">
                         <p>Internal Server Error</p>
@@ -247,7 +247,7 @@
                         <p>The request could not be completed due to an error on the server side.</p>
                     </div>
                     <div class="tcol1 text-center">
-                        <span class="backround-gray" style="color:#1B1643;">503</span>
+                        <span class="backround-gray">503</span>
                     </div>
                     <div class="tcol2">
                         <p>Service Unavailable</p>
