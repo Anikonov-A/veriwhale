@@ -2196,6 +2196,7 @@ main .example_docs .container .table .th {
 @media screen and (max-width: 575px) {
   main .example_docs .container .table .th {
     padding: 5px 0;
+    font-size: 10px;
   }
 }
 main .example_docs .container .table .tcol1 {

@@ -24,11 +24,12 @@ main {
   background: #D0D8DF;
   padding: 2px 8px;
 }
-.grid_table{
+
+.grid_table {
   display: grid;
   grid-template-columns: 2fr 1fr auto;
   gap: 20px;
-  @include max-screen(768px){
+  @include max-screen(768px) {
     gap: 10px;
   }
 }
@@ -77,6 +78,7 @@ main {
           }
           @include max-screen(575px) {
             padding: 5px 0;
+            font-size: 10px;
           }
         }
 
@@ -92,7 +94,7 @@ main {
             font-size: 12px;
             line-height: 12.5px;
           }
-          @include max-screen(768px){
+          @include max-screen(768px) {
             font-size: 10px;
           }
 
