@@ -4,7 +4,6 @@
 
   .container {
     max-width: 1256px;
-    min-width: 360px;
     margin: auto;
 
     h2 {
@@ -66,7 +65,7 @@
 
           span {
             img {
-              max-width: 100%;
+              width: 100%;
             }
           }
 
@@ -152,10 +151,9 @@
   }
   @media(max-width: 428px) {
     .why_do {
-      padding: 40px 0 40px;
+      padding: 40px 15px 40px;
 
       .container {
-        min-width: 360px;
 
         h2 {
           font-size: 14px;

@@ -7,10 +7,12 @@
   @include max-screen(418px) {
     padding: 15px 15px 15px;
   }
+  @include max-screen(360px){
+    padding: 15px 0;
+  }
 
   .container {
     max-width: 1144px;
-    min-width: 360px;
     margin: auto;
 
     h2 {
@@ -31,10 +33,9 @@
       gap: 8px;
       @include max-screen(418px) {
         justify-content: center;
+        flex-direction: column;
       }
-      @include max-screen(360px){
-        justify-content: start;
-      }
+
 
       article {
         border-radius: 24px;

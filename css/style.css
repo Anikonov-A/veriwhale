@@ -873,7 +873,6 @@ footer .container .ft_right img {
 }
 .why_do .container {
   max-width: 1256px;
-  min-width: 360px;
   margin: auto;
 }
 .why_do .container h2 {
@@ -923,7 +922,7 @@ footer .container .ft_right img {
     padding: 10px 25px 40px;
   }
   .why_do .container .container_article_group article span img {
-    max-width: 100%;
+    width: 100%;
   }
   .why_do .container .container_article_group article h5 {
     font-size: 20px;
@@ -977,10 +976,7 @@ footer .container .ft_right img {
 }
 @media (max-width: 991px) and (max-width: 428px) {
   .why_do {
-    padding: 40px 0 40px;
-  }
-  .why_do .container {
-    min-width: 360px;
+    padding: 40px 15px 40px;
   }
   .why_do .container h2 {
     font-size: 14px;
@@ -1017,9 +1013,13 @@ footer .container .ft_right img {
     padding: 15px 15px 15px;
   }
 }
+@media screen and (max-width: 360px) {
+  .products {
+    padding: 15px 0;
+  }
+}
 .products .container {
   max-width: 1144px;
-  min-width: 360px;
   margin: auto;
 }
 .products .container h2 {
@@ -1043,11 +1043,7 @@ footer .container .ft_right img {
 @media screen and (max-width: 418px) {
   .products .container .products_wrapper {
     justify-content: center;
-  }
-}
-@media screen and (max-width: 360px) {
-  .products .container .products_wrapper {
-    justify-content: start;
+    flex-direction: column;
   }
 }
 .products .container .products_wrapper article {
@@ -1109,7 +1105,6 @@ footer .container .ft_right img {
 }
 .about_verification .container {
   max-width: 1376px;
-  min-width: 360px;
   margin: auto;
 }
 .about_verification .container .about_wrapper {
@@ -1275,7 +1270,6 @@ footer .container .ft_right img {
   }
 }
 .range_price .container {
-  min-width: 360px;
   max-width: 900px;
   margin: auto;
 }
@@ -1326,11 +1320,6 @@ footer .container .ft_right img {
 @media screen and (max-width: 575px) {
   .range_price .container .range_price_wrapper {
     margin-bottom: 30px;
-  }
-}
-@media screen and (max-width: 380px) {
-  .range_price .container .range_price_wrapper {
-    width: 330px;
   }
 }
 .range_price .container .range_price_wrapper .price_request {
@@ -1515,7 +1504,6 @@ footer .container .ft_right img {
 }
 .pricing .container {
   max-width: 1252px;
-  min-width: 360px;
   margin: auto;
 }
 .pricing .container h2 {
@@ -2102,8 +2090,11 @@ footer .container .ft_right img {
   }
 }
 @media (max-width: 428px) {
+  .get_keys {
+    padding: 0;
+  }
   .get_keys .container .get_keys_wrapper {
-    padding: 10px 15px 10px;
+    padding: 15px 15px 15px;
   }
   .get_keys .container .get_keys_wrapper h2 {
     font-size: 14px;
@@ -2117,6 +2108,11 @@ footer .container .ft_right img {
 }
 main {
   padding: 80px 15px;
+}
+@media screen and (max-width: 428px) {
+  main {
+    padding: 40px 15px;
+  }
 }
 
 .mb40 {

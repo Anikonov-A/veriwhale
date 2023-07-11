@@ -1,5 +1,8 @@
 main {
   padding: 80px 15px;
+  @include max-screen(428px){
+    padding: 40px 15px;
+  }
 }
 
 .mb40 {
