@@ -830,7 +830,7 @@ footer .container .ft_right img {
     font-size: 30px;
   }
   .main_banner .container .heropage_component_container .image_main svg {
-    max-width: 70%;
+    max-width: 100%;
   }
 }
 @media (max-width: 991px) {
