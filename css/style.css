@@ -629,6 +629,7 @@ header .container .header_link_right a:last-of-type:hover {
     background-color: #01F4AB;
     padding: 10px 15px;
     border-radius: 10px;
+    text-align: right;
   }
   header .container .list a:hover {
     color: #FFFFFF;
@@ -2107,7 +2108,7 @@ footer .container .ft_right img {
   }
 }
 main {
-  padding: 80px 15px;
+  padding: 0 15px;
 }
 @media screen and (max-width: 428px) {
   main {
@@ -2555,6 +2556,7 @@ h6 > span:after {
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {

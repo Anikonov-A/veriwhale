@@ -8,9 +8,25 @@
     <title>Example docs</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/favicon.ico">
-
 </head>
 <body>
+<header>
+    <div class="container d-flex justify-beetween align-center">
+        <a class="header_logo" href="index.html"><img src="img/logo.svg" alt="logo_header"></a>
+        <nav>
+            <button type="button" class="header_mobile_btn js-mobile-btn"></button>
+            <ul class="list d-flex js-mobile-menu header__menu">
+                <li><a href="products_phone.html">Products</a></li>
+                <li><a href="example_docs.html">Documentation</a></li>
+                <li><a href="products_email.html">Pricing</a></li>
+            </ul>
+        </nav>
+        <div class="header_link_right">
+            <a href="#">Sign up</a>
+            <a href="#" class="modal_btn">Get started</a>
+        </div>
+    </div>
+</header>
 <main>
     <section class="example_docs">
         <div class="container">
@@ -261,7 +277,71 @@
 
 
     </section>
+    <section class="get_started_form modal" id="modal">
+        <div class="container">
+            <div class="form_wrapper d-flex justify-center">
+                <div class="form">
+                    <h2>Get started</h2>
+                    <h4>Get your API key in seconds</h4>
+                    <form method="post" action="#">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" placeholder="jane@doe.com">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password">
+                        <img src="img/presentation.svg" alt="Insert Captcha Here">
+                        <button type="submit" class="btn_cont">Continue</button>
+                        <h6><span>Or</span></h6>
+                        <button type="button" class="btn_login">Login</button>
+                    </form>
+                </div>
+                <div class="advantages d-flex flex-column align-center">
+                    <h3>You're seconds away from your<br>
+                        API key, along with:</h3>
+                    <ul>
+                        <li class="d-flex align-center"><img src="img/checkMark.svg"
+                                                             alt="img"><span>15+ powerful API's</span></li>
+                        <li class="d-flex align-center"><img src="img/checkMark.svg" alt="img"><span>Generous plans</span>
+                        </li>
+                        <li class="d-flex align-center"><img src="img/checkMark.svg" alt="img"><span>Transparent and fair
+                        pricing</span></li>
+                        <li class="d-flex align-center"><img src="img/checkMark.svg" alt="img"><span>World-class technical
+                        support</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </main>
+<footer>
+    <div class="container">
+        <div class="footer_wrapper d-flex justify-beetween">
+            <div class="ft_left d-flex">
+                <ul>
+                    <li>Products</li>
+                    <li><a href="products_email.html">Email Validation API</a></li>
+                    <li><a href="products_phone.html">Phone Validation API</a></li>
+                    <li><a href="#">IBAN Validation API</a></li>
+                    <li><a href="#">---</a></li>
+                    <li><a href="#">---</a></li>
+                    <li><a href="#">---</a></li>
+                </ul>
+                <ul>
+                    <li>Company</li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">GDPR & CCPA</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">Privacy Notice</a></li>
+                </ul>
+            </div>
+            <div class="ft_right">
+                <a class="footer_logo" href="index.html"><img src="img/footer_logo.svg" alt="footer_logo"></a>
+            </div>
+        </div>
+        <p>© Veriwhale. 2014-2023. All rights reserved.</p>
+    </div>
+
+</footer>
+<script src="js/script.js"></script>
 </body>
 </html>
